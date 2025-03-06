@@ -1,6 +1,15 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
-layout: home
+layout: default
+title: Home
 ---
+
+![Australian Bioimage Analysts' Society](assets/images/logo.png)
+
+Welcome to the Australian Bioimage Analysts' Society.
+
+## Navigation
+- [About](/about/)
+- [Events](/events/)
+- [Resources](/resources/)
+- [Community](/community/)
+- [Contact](/contact/)

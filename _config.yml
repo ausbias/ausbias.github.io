@@ -22,3 +22,8 @@ nav:
     url: "/community/"
   - title: "Contact"
     url: "/contact/"
+
+# Disable posts (remove blog-related settings)
+collections:
+  posts:
+    output: false
