@@ -6,7 +6,7 @@ permalink: /about/
 
 # About Us
 
-The **Australian Bioimage Analysts' Society** is dedicated to supporting and connecting bioimage analysts across Australia. Our mission is to:
+The **Australian Bioimage Analysts' Society** is dedicated to supporting and connecting bioimage analysts across Australia. We are a subcommittee of Light Microscopy Ausralia, and the [Australian Microscopy and Microanalysis Society](https://microscopy.org.au/) Our mission is to:
 
 - Foster collaboration between image analysts and researchers.
 - Provide training, resources, and best practices for bioimage analysis.
