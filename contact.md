@@ -13,7 +13,7 @@ All AusBIAS communication is currently via our google group **[https://groups.go
 
 ## 🏛 Social Media & Community
 Stay connected with us through our online communities:
-- **Blusky:** [@AusBIAS.bsky.social](https://twitter.com/BioimageAnalysts) *(Update with actual link)*
+- **Blusky:** [@AusBIAS.bsky.social](https://drlachie.bsky.social) *(Update with actual link - not mine)*
 - **GitHub:** [Australian Bioimage Analysts](https://github.com/ausbias)
 
 ## 📍 Events & Meetings
