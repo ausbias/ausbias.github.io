@@ -3,7 +3,7 @@ email: "-"
 description: >
   The Australian Bioimage Analysts' Society is dedicated to supporting and connecting bioimage analysts across Australia.
 baseurl: ""
-url: "https://yourusername.github.io"
+url: "https://ausbias.github.io"
 
 theme: minima
 
@@ -18,8 +18,6 @@ nav:
     url: "/events/"
   - title: "Resources"
     url: "/resources/"
-  - title: "Community"
-    url: "/community/"
   - title: "Contact"
     url: "/contact/"
 
