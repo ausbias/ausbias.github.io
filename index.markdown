@@ -9,4 +9,6 @@ Welcome to the Australian Bioimage Analysts' Society.
 
 ## Navigation
 - [About](/about/)
+- [Events](/events/)
+- [Resources](/resources/)
 - [Contact](/contact/)
