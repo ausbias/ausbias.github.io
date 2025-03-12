@@ -1,9 +1,9 @@
 title: Australian Bioimage Analysts' Society
-email: "https://groups.google.com/g/ausbias"
+email: "contact@bioimageanalysts.org"
 description: >
   The Australian Bioimage Analysts' Society is dedicated to supporting and connecting bioimage analysts across Australia.
 baseurl: ""
-url: "https://ausbias.github.io"
+url: "https://yourusername.github.io"
 
 theme: minima
 
@@ -27,3 +27,14 @@ nav:
 collections:
   posts:
     output: false
+
+# Pages
+pages:
+  - title: "About"
+    file: "about.md"
+  - title: "Events"
+    file: "events.md"
+  - title: "Resources"
+    file: "resources.md"
+  - title: "Contact"
+    file: "contact.md"
