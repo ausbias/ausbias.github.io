@@ -3,7 +3,7 @@ layout: default
 title: Home
 ---
 
-![Australian Bioimage Analysts' Society](assets/images/newlogo.png){: width="480"}
+![Australian Bioimage Analysts' Society](assets/images/banner_logo.png){: width="480"}
 
 Welcome to the Australian Bioimage Analysts' Society.
 
