@@ -2,8 +2,18 @@
 layout: default
 title: Home
 ---
+<style>
+@font-face {
+  font-family: 'Oswald';
+  src: url('/assets/fonts/oswald-regular.ttf');
+}
 
-![Australian Bioimage Analysts' Society](assets/images/banner_logo.png){: width="480"}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Oswald', sans-serif;
+}
+</style>
+
+![Australian Bioimage Analysts' Society](assets/images/banner_logo.png){: width="640"}
 
 Welcome to the Australian Bioimage Analysts' Society.
 
