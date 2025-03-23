@@ -16,6 +16,7 @@ h1, h2, h3, h4, h5, h6,
   font-family: 'Oswald', sans-serif !important;
 }
 </style>
+<link rel="icon" href="/assets/images/favicon.png" type="image/png">
 # Contact Us
 
 We’d love to hear from you! Whether you have questions, suggestions, or want to get involved, here’s how you can reach us:

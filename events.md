@@ -16,6 +16,7 @@ h1, h2, h3, h4, h5, h6,
   font-family: 'Oswald', sans-serif !important;
 }
 </style>
+<link rel="icon" href="/assets/images/favicon.png" type="image/png">
 # Events
 
 AusBIAS organises monthly meetings, usually online, where often one member will lead discussion of a paper, method, or problem of the day. 

@@ -16,6 +16,8 @@ h1, h2, h3, h4, h5, h6,
   font-family: 'Oswald', sans-serif !important;
 }
 </style>
+<link rel="icon" href="/assets/images/favicon.png" type="image/png">
+
 # Resources
 
 Here are some useful tools and references developed by our members:
