@@ -40,3 +40,6 @@ pages:
     file: "resources.md"
   - title: "Contact"
     file: "contact.md"
+
+  sass:
+  style: compressed
