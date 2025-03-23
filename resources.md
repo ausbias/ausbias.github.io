@@ -3,7 +3,16 @@ layout: default
 title: Resources
 permalink: /resources/
 ---
+<style>
+@font-face {
+  font-family: 'Oswald';
+  src: url('/assets/fonts/oswald-regular.ttf');
+}
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Oswald', sans-serif;
+}
+</style>
 # Resources
 
 Here are some useful tools and references developed by our members:

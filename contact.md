@@ -3,7 +3,16 @@ layout: default
 title: Contact
 permalink: /contact/
 ---
+<style>
+@font-face {
+  font-family: 'Oswald';
+  src: url('/assets/fonts/oswald-regular.ttf');
+}
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Oswald', sans-serif;
+}
+</style>
 # Contact Us
 
 We’d love to hear from you! Whether you have questions, suggestions, or want to get involved, here’s how you can reach us:

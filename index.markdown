@@ -5,13 +5,17 @@ title: Home
 <style>
 @font-face {
   font-family: 'Oswald';
-  src: url('/assets/fonts/oswald-regular.ttf');
+  src: url('/assets/fonts/oswald-regular.ttf') format('truetype');
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Oswald', sans-serif;
+h1, h2, h3, h4, h5, h6,
+.site-title,
+.site-nav,
+.site-nav a {
+  font-family: 'Oswald', sans-serif !important;
 }
 </style>
+
 
 ![Australian Bioimage Analysts' Society](assets/images/banner_logo.png){: width="640"}
 

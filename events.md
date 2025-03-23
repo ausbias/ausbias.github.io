@@ -3,7 +3,16 @@ layout: default
 title: Events
 permalink: /events/
 ---
+<style>
+@font-face {
+  font-family: 'Oswald';
+  src: url('/assets/fonts/oswald-regular.ttf');
+}
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Oswald', sans-serif;
+}
+</style>
 # Events
 
 AusBIAS organises monthly meetings, usually online, where often one member will lead discussion of a paper, method, or problem of the day. 
