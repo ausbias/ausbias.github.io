@@ -41,5 +41,5 @@ pages:
   - title: "Contact"
     file: "contact.md"
 
-  sass:
+sass:
   style: compressed
