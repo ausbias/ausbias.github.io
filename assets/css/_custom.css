@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'Oswald';
+    src: url('{{ site.baseurl }}/assets/fonts/oswald-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Oswald', sans-serif;
+  }
