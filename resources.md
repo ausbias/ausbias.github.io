@@ -3,6 +3,7 @@ layout: default
 title: Resources
 permalink: /resources/
 ---
+<style>
 @font-face {
   font-family: 'Oswald';
   src: url('/assets/fonts/oswald-regular.ttf') format('truetype');
