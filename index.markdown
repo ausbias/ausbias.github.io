@@ -15,7 +15,7 @@ h1, h2, h3, h4, h5, h6,
   font-family: 'Oswald', sans-serif !important;
 }
 </style>
-<link rel="icon" href="/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico?">
 
 
 ![Australian Bioimage Analysts' Society](assets/images/banner_logo.png){: width="640"}
