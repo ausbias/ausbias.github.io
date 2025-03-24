@@ -21,15 +21,15 @@ h1, h2, h3, h4, h5, h6,
 
 We’d love to hear from you! Whether you have questions, suggestions, or want to get involved, here’s how you can reach us:
 
-## 📧 Google Group
+## Google Group
 All AusBIAS communication is currently via our google group **[https://groups.google.com/g/ausbias](https://groups.google.com/g/ausbias)**.
 
-## 🏛 Social Media & Community
+## Social Media & Community
 Stay connected with us through our online communities:
-- **Blusky:** [@AusBIAS.bsky.social](https://drlachie.bsky.social) *(Update with actual link - not mine)*
+- **Blusky:** [@AusBIAS.bsky.social](https://ausbias.bsky.social) 
 - **GitHub:** [Australian Bioimage Analysts](https://github.com/ausbias)
 
-## 📍 Events & Meetings
+## Events & Meetings
 We regularly host workshops, webinars, and community discussions. Check our [Events](/events/) page for upcoming activities.
 
 
