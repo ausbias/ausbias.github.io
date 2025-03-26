@@ -86,6 +86,6 @@ h1, h2, h3, h4, h5, h6,
 
 <div style="text-align: center; margin-top: 2em;">
   <a href="https://bsky.app/profile/ausbias.bsky.social" target="_blank" style="display: inline-block;">
-    <img src="/assets/images/bluesky_-_logo.png" alt="Follow us on Bluesky" style="height: 40px;">
+    <img src="/assets/images/bluesky_logo.png" alt="Follow us on Bluesky" style="height: 40px;">
   </a>
 </div>
