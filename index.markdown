@@ -45,6 +45,10 @@ h1, h2, h3, h4, h5, h6,
   max-width: 100%;
   border-radius: 5px;
 }
+
+.site-footer .footer-col-wrapper .footer-col:first-child p:first-of-type {
+  display: none;
+}
 </style>
 
 <link rel="shortcut icon" type="image/x-icon" href="favicon.ico?">
@@ -78,4 +82,10 @@ h1, h2, h3, h4, h5, h6,
     <p><a href="https://www.globias.org/activities/annual-workshop-kobe-2025" target="_blank">Click to go to Globias Site</a></p>
   </div>
 
+</div>
+
+<div style="text-align: center; margin-top: 2em;">
+  <a href="https://bsky.app/profile/ausbias.bsky.social" target="_blank" style="display: inline-block;">
+    <img src="/assets/images/bluesky_-_logo.png" alt="Follow us on Bluesky" style="height: 40px;">
+  </a>
 </div>
