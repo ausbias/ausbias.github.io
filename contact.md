@@ -22,7 +22,8 @@ h1, h2, h3, h4, h5, h6,
 We’d love to hear from you! Whether you have questions, suggestions, or want to get involved, here’s how you can reach us:
 
 ## Google Group
-All AusBIAS communication is currently via our google group **[https://groups.google.com/g/ausbias](https://groups.google.com/g/ausbias)**.
+All AusBIAS communication is currently via our google group **[https://groups.google.com/g/ausbias](https://groups.google.com/g/ausbias)**.<BR>
+There are sometimes issues with using institute email addresses, they can be added manually by the administrators - add this information when requesting access via the request form and we'll do our best to get you signed up. 
 
 ## Social Media & Community
 Stay connected with us through our online communities:
