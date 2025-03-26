@@ -52,19 +52,19 @@ h1, h2, h3, h4, h5, h6,
 <!-- Logo -->
 ![Australian Bioimage Analysts' Society](assets/images/banner_logo.png){: width="640" }
 
-Welcome to the Australian Bioimage Analysts' Society.
+<h2>Welcome to the Australian Bioimage Analysts' Society.</h2>
 
 <div class="columns">
 
   <div class="column-left" markdown="1">
 
-  ## Navigation
+  <h3> Navigation </h3>
   - [About](/about/)
   - [Events](/events/)
   - [Resources](/resources/)
   - [Contact](/contact/)
 
-  ## Parents and Affiliated Societies
+  <h3> Parents and Affiliated Societies </h3>
   - Light Microscopy Australia [LMA](https://microscopy.org.au/lma/) (Our parent society)  
   - The Australian Microscopy & Microanalysis Society [AMMS](https://microscopy.org.au/) (Our parent society's parent society)  
   - Global Bioimage Analysts' Society [GloBIAS](https://www.globias.org/)
