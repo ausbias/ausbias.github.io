@@ -56,7 +56,7 @@ Welcome to the Australian Bioimage Analysts' Society.
 
 <div class="columns">
 
-  <div class="column-left">
+  <div class="column-left" markdown="1">
 
   ## Navigation
   - [About](/about/)
@@ -66,7 +66,7 @@ Welcome to the Australian Bioimage Analysts' Society.
 
   ## Parents and Affiliated Societies
   - Light Microscopy Australia [LMA](https://microscopy.org.au/lma/) (Our parent society)  
-  - The Australian Microscopy & Microanalysis Society [AMMS](https://microscopy.org.au/) (Our parent's parent society)  
+  - The Australian Microscopy & Microanalysis Society [AMMS](https://microscopy.org.au/) (Our parent society's parent society)  
   - Global Bioimage Analysts' Society [GloBIAS](https://www.globias.org/)
 
   </div>
@@ -75,7 +75,7 @@ Welcome to the Australian Bioimage Analysts' Society.
     <a href="https://www.globias.org/activities/annual-workshop-kobe-2025" target="_blank">
       <img src="/assets/images/GloBIAS2025_advertising-poster_v1.2.0-1.png" alt="Globias2025 advertising poster">
     </a>
-    <p><a href="https://www.globias.org/activities/annual-workshop-kobe-2025" target="_blank">Click to view full poster</a></p>
+    <p><a href="https://www.globias.org/activities/annual-workshop-kobe-2025" target="_blank">Click to go to Globias Site</a></p>
   </div>
 
 </div>
