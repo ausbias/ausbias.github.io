@@ -3,20 +3,8 @@ layout: default
 title: About
 permalink: /about/
 ---
-<style>
-@font-face {
-  font-family: 'Oswald';
-  src: url('/assets/fonts/oswald-regular.ttf') format('truetype');
-}
 
-h1, h2, h3, h4, h5, h6,
-.site-title,
-.site-nav,
-.site-nav a {
-  font-family: 'Oswald', sans-serif !important;
-}
-</style>
-<link rel="icon" href="/assets/images/favicon.png" type="image/png">
+
 # About Us
 
 The **Australian Bioimage Analysts' Society** is dedicated to supporting and connecting bioimage analysts across Australia. We are a subcommittee of Light Microscopy Ausralia, and the [Australian Microscopy and Microanalysis Society](https://microscopy.org.au/) Our mission is to:

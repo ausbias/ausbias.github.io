@@ -1,10 +1,48 @@
-@font-face {
-  font-family: 'Oswald';
-  src: url('../fonts/oswald-regular.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
+  @font-face {
+    font-family: 'Oswald';
+    src: url('/assets/fonts/oswald-regular.ttf') format('truetype');
+  }
   
-  h1, h2, h3, h4, h5, h6 {
+  h1, h2, h3, h4, h5, h6,
+  .site-title,
+  .site-nav,
+  .site-nav a {
     font-family: 'Oswald', sans-serif !important;
   }
+
+.nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 1em;
+}
+
+.nav li {
+  display: inline;
+}
+
+.nav a {
+  text-decoration: none;
+  font-weight: normal;
+}
+
+.site-nav a {
+  color: #3f748c;
+  text-decoration: none;
+}
+
+.site-nav a:visited {
+  color: #3f748c; /* same as default to prevent purple */
+}
+
+.site-nav a:hover,
+.site-nav a:focus {
+  color: #00befd;
+  text-decoration: underline;
+}
+
+a img:hover {
+  transform: scale(1.05);
+  transition: transform 0.2s ease;
+}

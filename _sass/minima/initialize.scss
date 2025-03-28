@@ -1,0 +1,67 @@
+@charset "utf-8";
+
+// Define defaults for each variable.
+
+$base-font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Segoe UI Emoji", "Segoe UI Symbol", "Apple Color Emoji", Roboto, Helvetica, Arial, sans-serif !default;
+$code-font-family: "Menlo", "Inconsolata", "Consolas", "Roboto Mono", "Ubuntu Mono", "Liberation Mono", "Courier New", monospace;
+$base-font-size:   16px !default;
+$base-font-weight: 400 !default;
+$small-font-size:  $base-font-size * 0.875 !default;
+$base-line-height: 1.5 !default;
+$text-color: #000000;
+$background-color: #ffffff;
+$heading-color: #3f748c;
+$link-base-color: #0033EE;
+$link-visited-color: #551A8B;
+$link-hover-color: #0088EE;
+$brand-color: #3f748c;
+$border-color-01: #3f748c;
+$border-color-02: #ffffff;
+$border-color-03: #1c343f;;
+$code-background-color: #999999;
+$site-title-color: #3f748c;
+$table-border-color: #222222;
+$table-text-color: #000000;
+$table-zebra-color: #444444;
+$table-header-bg-color: #ffffff;
+$table-header-border:  #444444;
+
+$spacing-unit:     30px !default;
+
+$table-text-align: left !default;
+
+// Width of the content area
+$content-width:    800px !default;
+
+$on-palm:          600px !default;
+$on-laptop:        800px !default;
+
+$on-medium:        $on-palm !default;
+$on-large:         $on-laptop !default;
+
+// Use media queries like this:
+// @include media-query($on-palm) {
+//   .wrapper {
+//     padding-right: $spacing-unit / 2;
+//     padding-left: $spacing-unit / 2;
+//   }
+// }
+// Notice the following mixin uses max-width, in a deprecated, desktop-first
+// approach, whereas media queries used elsewhere now use min-width.
+@mixin media-query($device) {
+  @media screen and (max-width: $device) {
+    @content;
+  }
+}
+
+@mixin relative-font-size($ratio) {
+  font-size: #{$ratio}rem;
+}
+
+// Import pre-styling-overrides hook and style-partials.
+@import
+  "minima/custom-variables", // Hook to override predefined variables.
+  "minima/base",             // Defines element resets.
+  "minima/layout",           // Defines structure and style based on CSS selectors.
+  "minima/custom-styles"     // Hook to override existing styles.
+;

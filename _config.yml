@@ -1,34 +1,32 @@
 title: Australian Bioimage Analysts' Society
-#email: "-"
+email: "-"
 description: >
   The Australian Bioimage Analysts' Society is dedicated to supporting and connecting bioimage analysts across Australia.
 baseurl: ""
-url: "https://ausbias.github.io"
-
-theme: minima
+url: "https://drlachie.github.io"
 
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
 
 nav:
-  - title: "Home"
-    url: "/"
   - title: "About"
     url: "/about/"
   - title: "Events"
     url: "/events/"
   - title: "Resources"
     url: "/resources/"
-  - title: "Community"
-    url: "/community/"
   - title: "Contact"
     url: "/contact/"
+  - title: "Blog"
+    url: "/blog/"
+
+permalink: /blog/:year/:month/:day/:title/
 
 # Disable posts (remove blog-related settings)
-collections:
-  posts:
-    output: false
+#collections:
+#  posts:
+#    output: True
 
 # Pages
 pages:
@@ -40,6 +38,9 @@ pages:
     file: "resources.md"
   - title: "Contact"
     file: "contact.md"
+  - title: "Blog"
+    file: "blog.md"
+
 
 sass:
   style: compressed

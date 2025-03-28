@@ -3,20 +3,7 @@ layout: default
 title: Contact
 permalink: /contact/
 ---
-<style>
-@font-face {
-  font-family: 'Oswald';
-  src: url('/assets/fonts/oswald-regular.ttf') format('truetype');
-}
 
-h1, h2, h3, h4, h5, h6,
-.site-title,
-.site-nav,
-.site-nav a {
-  font-family: 'Oswald', sans-serif !important;
-}
-</style>
-<link rel="icon" href="/assets/images/favicon.png" type="image/png">
 # Contact Us
 
 We’d love to hear from you! Whether you have questions, suggestions, or want to get involved, here’s how you can reach us:
