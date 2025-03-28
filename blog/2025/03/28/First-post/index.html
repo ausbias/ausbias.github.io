@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>The AusBIAS Logo | Australian Bioimage Analysts’ Society</title>
+<meta name="generator" content="Jekyll v4.3.4" />
+<meta property="og:title" content="The AusBIAS Logo" />
+<meta name="author" content="Lachlan Whitehead" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="What’s a society without a logo?" />
+<meta property="og:description" content="What’s a society without a logo?" />
+<link rel="canonical" href="https://drlachie.github.io/blog/2025/03/28/First-post/" />
+<meta property="og:url" content="https://drlachie.github.io/blog/2025/03/28/First-post/" />
+<meta property="og:site_name" content="Australian Bioimage Analysts’ Society" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2025-03-28T00:00:00+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="The AusBIAS Logo" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Lachlan Whitehead"},"dateModified":"2025-03-28T00:00:00+00:00","datePublished":"2025-03-28T00:00:00+00:00","description":"What’s a society without a logo?","headline":"The AusBIAS Logo","mainEntityOfPage":{"@type":"WebPage","@id":"https://drlachie.github.io/blog/2025/03/28/First-post/"},"url":"https://drlachie.github.io/blog/2025/03/28/First-post/"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/main.css"><link type="application/atom+xml" rel="alternate" href="https://drlachie.github.io/feed.xml" title="Australian Bioimage Analysts&apos; Society" />
+</head>
+<body><header class="site-header">
+  <div class="wrapper">
+    <a class="site-title" href="/">Australian Bioimage Analysts' Society</a>
+    <nav class="site-nav">
+      <ul class="nav">
+        
+          <li><a href="/about/">About</a></li>
+        
+          <li><a href="/events/">Events</a></li>
+        
+          <li><a href="/resources/">Resources</a></li>
+        
+          <li><a href="/contact/">Contact</a></li>
+        
+          <li><a href="/blog/">Blog</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">The AusBIAS Logo</h1>
+    <div class="post-meta">
+      <time class="dt-published" datetime="2025-03-28T00:00:00+00:00" itemprop="datePublished">
+        Mar 28, 2025
+      </time>
+      <div class="force-inline post-authors">
+          <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <span class="p-author h-card" itemprop="name">Lachlan Whitehead</span></span>
+      </div>
+    </div>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <h3 id="whats-a-society-without-a-logo">What’s a society without a logo?</h3>
+
+<p>When we first decided we needed a website, the first question was obviously: what should our logo be.</p>
+
+<p>At first I wanted something quickly, and took the obvious route of paying homage (shamelessly plagiarising) the GloBIAS Logo:</p>
+
+<p><img src="/assets/images/globias_logo.png" alt="Globias Logo" height="200" /></p>
+
+<p>In a fit of … what’s the opposite of creatitvity… I created this monstrosity: 
+<img src="/assets/images/old_logo_DoNotUse.png" alt="Original Ausbias Logo" height="150" /></p>
+
+<p>My thoughts were:</p>
+
+<ul>
+  <li>change the colours to “Aussie it up a bit”</li>
+  <li>highlight the bottom right, where we usually appear on a map of the world.</li>
+</ul>
+
+<p>After all this, I decided it was best to actually ask permission from the GloBIAS organising committee and, while flattered, they were somewhat concerned about protecting their brand now that they’re a legal entity. This was entirely justified so back to the drawing board for me.</p>
+
+<p>Next I looked at the Neubias logo:</p>
+
+<p><img src="/assets/images/neubias_logo.png" alt="Neubias Logo" height="200" /></p>
+
+<p>Well I liked the look of the network there, so that’s where I started tinkering.</p>
+
+<p>I liked the idea of the <img src="https://napari.org/dev/naps/5-new-logo.html" alt="napari logo" /> being completely defined in python, so thought I could follow their lead. First - I found a csv file with the latitude and longitude of the major cities in Australia, including their populations. Then wrote a script to put a propotionally population sized dot on each and connect them with lines.</p>
+
+<p><img src="/assets/images/straight_lines.png" alt="Australia with striaght lines connecting population centers" height="300" /></p>
+
+<p>That was cool and all, but as I had scaled the cities to the population, why not do the same with the lines?</p>
+
+<p><img src="/assets/images/scale_lines.png" alt="Getting closer" height="300" /></p>
+
+<p>I still wasn’t happy so decided to curve the lines, and add a colour map:</p>
+
+<p><img src="/assets/images/almost_final.png" alt="Almost there..." height="300" /></p>
+
+<p>That was it. Thought to make it more abstract I’d remove the coastline, had a design-minded friend (thanks Michael) help chose a font and the rest is (extremely recent) history:</p>
+
+<p><img src="/assets/images/banner_logo.png" alt="Ausbias Final Logo" height="300" /></p>
+
+<p>If you want to generate the logo yourself, all the code is in <a href="https://github.com/ausbias/ausbias.github.io/tree/main/logo_stuff">our github</a>!</p>
+
+<p>Fun trivia: the logo initially included Geelong, but not Canberra. It was pointed out that while we do have members who work and reside in Geelong, missing our nation’s capital was perhaps sub-optimal.</p>
+
+  </div><a class="u-url" href="/blog/2025/03/28/First-post/" hidden></a><div class="post-meta">
+    <span>Written by Lachlan Whitehead</span>• <a href="https://bsky.app/profile/drlachie.bsky.social" target="_blank">Bluesky</a></div></article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <h2 class="footer-heading">Australian Bioimage Analysts' Society</h2>
+        <a class="bsky-link" href="https://bsky.app/profile/ausbias.bsky.social" target="_blank">
+          <img src="/assets/images/bluesky_logo.png" alt="Follow us on Bluesky" style="height: 24px; vertical-align: middle;">
+          <!--<span>Follow us on Bluesky</span>-->
+        </a>
+      </div>
+      <div class="footer-col">
+        <p>The Australian Bioimage Analysts&#39; Society is dedicated to supporting and connecting bioimage analysts across Australia.
+</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"></ul>
+</div>
+
+  </div>
+
+</footer>
+
+</body>
+
+</html>

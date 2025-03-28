@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="https://drlachie.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://drlachie.github.io/" rel="alternate" type="text/html" /><updated>2025-03-28T09:26:42+00:00</updated><id>https://drlachie.github.io/feed.xml</id><title type="html">Australian Bioimage Analysts’ Society</title><subtitle>The Australian Bioimage Analysts&apos; Society is dedicated to supporting and connecting bioimage analysts across Australia.
+</subtitle><entry><title type="html">The AusBIAS Logo</title><link href="https://drlachie.github.io/blog/2025/03/28/First-post/" rel="alternate" type="text/html" title="The AusBIAS Logo" /><published>2025-03-28T00:00:00+00:00</published><updated>2025-03-28T00:00:00+00:00</updated><id>https://drlachie.github.io/blog/2025/03/28/First-post</id><content type="html" xml:base="https://drlachie.github.io/blog/2025/03/28/First-post/"><![CDATA[<h3 id="whats-a-society-without-a-logo">What’s a society without a logo?</h3>
+
+<p>When we first decided we needed a website, the first question was obviously: what should our logo be.</p>
+
+<p>At first I wanted something quickly, and took the obvious route of paying homage (shamelessly plagiarising) the GloBIAS Logo:</p>
+
+<p><img src="/assets/images/globias_logo.png" alt="Globias Logo" height="200" /></p>
+
+<p>In a fit of … what’s the opposite of creatitvity… I created this monstrosity: 
+<img src="/assets/images/old_logo_DoNotUse.png" alt="Original Ausbias Logo" height="150" /></p>
+
+<p>My thoughts were:</p>
+
+<ul>
+  <li>change the colours to “Aussie it up a bit”</li>
+  <li>highlight the bottom right, where we usually appear on a map of the world.</li>
+</ul>
+
+<p>After all this, I decided it was best to actually ask permission from the GloBIAS organising committee and, while flattered, they were somewhat concerned about protecting their brand now that they’re a legal entity. This was entirely justified so back to the drawing board for me.</p>
+
+<p>Next I looked at the Neubias logo:</p>
+
+<p><img src="/assets/images/neubias_logo.png" alt="Neubias Logo" height="200" /></p>
+
+<p>Well I liked the look of the network there, so that’s where I started tinkering.</p>
+
+<p>I liked the idea of the <img src="https://napari.org/dev/naps/5-new-logo.html" alt="napari logo" /> being completely defined in python, so thought I could follow their lead. First - I found a csv file with the latitude and longitude of the major cities in Australia, including their populations. Then wrote a script to put a propotionally population sized dot on each and connect them with lines.</p>
+
+<p><img src="/assets/images/straight_lines.png" alt="Australia with striaght lines connecting population centers" height="300" /></p>
+
+<p>That was cool and all, but as I had scaled the cities to the population, why not do the same with the lines?</p>
+
+<p><img src="/assets/images/scale_lines.png" alt="Getting closer" height="300" /></p>
+
+<p>I still wasn’t happy so decided to curve the lines, and add a colour map:</p>
+
+<p><img src="/assets/images/almost_final.png" alt="Almost there..." height="300" /></p>
+
+<p>That was it. Thought to make it more abstract I’d remove the coastline, had a design-minded friend (thanks Michael) help chose a font and the rest is (extremely recent) history:</p>
+
+<p><img src="/assets/images/banner_logo.png" alt="Ausbias Final Logo" height="300" /></p>
+
+<p>If you want to generate the logo yourself, all the code is in <a href="https://github.com/ausbias/ausbias.github.io/tree/main/logo_stuff">our github</a>!</p>
+
+<p>Fun trivia: the logo initially included Geelong, but not Canberra. It was pointed out that while we do have members who work and reside in Geelong, missing our nation’s capital was perhaps sub-optimal.</p>]]></content><author><name>Lachlan Whitehead</name></author><category term="news" /><category term="updates" /><summary type="html"><![CDATA[What’s a society without a logo?]]></summary></entry></feed>
