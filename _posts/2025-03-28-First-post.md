@@ -33,7 +33,7 @@ Next I looked at the Neubias logo:
 
 Well I liked the look of the network there, so that's where I started tinkering. 
 
-I liked the idea of the ![napari logo](https://napari.org/dev/naps/5-new-logo.html) being completely defined in python, so thought I could follow their lead. First - I found a csv file with the latitude and longitude of the major cities in Australia, including their populations. Then wrote a script to put a propotionally population sized dot on each and connect them with lines.
+I liked the idea of the [napari logo](https://napari.org/dev/naps/5-new-logo.html) being completely defined in python, so thought I could follow their lead. First - I found a csv file with the latitude and longitude of the major cities in Australia, including their populations. Then wrote a script to put a propotionally population sized dot on each and connect them with lines.
 
 ![Australia with striaght lines connecting population centers](/assets/images/straight_lines.png){: height="300" }
 
