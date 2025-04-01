@@ -57,7 +57,17 @@
     <main class="page-content" aria-label="Content">
       <div class="wrapper">
         <style>
+@font-face {
+  font-family: 'Oswald';
+  src: url('/assets/fonts/oswald-regular.ttf') format('truetype');
+}
 
+h1, h2, h3, h4, h5, h6,
+.site-title,
+.site-nav,
+.site-nav a {
+  font-family: 'Oswald', sans-serif !important;
+}
 
 /* Two-column container */
 .columns {
@@ -100,6 +110,7 @@
 
 We are a community of researchers, developers, and image analysts dedicated to advancing the field of bioimage analysis in Australia. Our mission is to foster collaboration, share knowledge, and support the growth of image analysis expertise across life sciences and biomedical research.
 
+<hr class="section-divider">
 <h3>Latest News </h3>
 
 
@@ -112,7 +123,7 @@ We are a community of researchers, developers, and image analysts dedicated to a
     <a href="/blog/2025/03/28/First-post/">Read more →</a>
   </article>
 
-
+<hr class="section-divider">
 <div class="columns">
 
   <div class="column-left">
@@ -148,7 +159,8 @@ We are a community of researchers, developers, and image analysts dedicated to a
 
     <footer class="site-footer">
       <div class="wrapper">
-        <footer class="site-footer h-card">
+        <!-- <footer class="site-footer h-card"> -->
+  <footer class="h-card"></footer>
   <data class="u-url" href="/"></data>
 
   <div class="wrapper">
@@ -167,8 +179,8 @@ We are a community of researchers, developers, and image analysts dedicated to a
       </div>
     </div>
 
-    <div class="social-links"><ul class="social-media-list"></ul>
-</div>
+    <!-- <div class="social-links"><ul class="social-media-list"></ul>
+</div> -->
 
   </div>
 
