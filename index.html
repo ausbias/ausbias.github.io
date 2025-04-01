@@ -4,7 +4,17 @@ title: Home
 ---
 
 <style>
+@font-face {
+  font-family: 'Oswald';
+  src: url('/assets/fonts/oswald-regular.ttf') format('truetype');
+}
 
+h1, h2, h3, h4, h5, h6,
+.site-title,
+.site-nav,
+.site-nav a {
+  font-family: 'Oswald', sans-serif !important;
+}
 
 /* Two-column container */
 .columns {
@@ -47,6 +57,7 @@ title: Home
 
 We are a community of researchers, developers, and image analysts dedicated to advancing the field of bioimage analysis in Australia. Our mission is to foster collaboration, share knowledge, and support the growth of image analysis expertise across life sciences and biomedical research.
 
+<hr class="section-divider">
 <h3>Latest News </h3>
 
 {% assign latest_post = site.posts.first %}
@@ -60,7 +71,7 @@ We are a community of researchers, developers, and image analysts dedicated to a
 {% else %}
   <p>No news yet. Check back soon!</p>
 {% endif %}
-
+<hr class="section-divider">
 <div class="columns">
 
   <div class="column-left">

@@ -46,3 +46,49 @@ a img:hover {
   transform: scale(1.05);
   transition: transform 0.2s ease;
 }
+
+.events-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  margin-top: 1em;
+}
+
+.event-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1em;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 1em;
+}
+
+.event-logo {
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.event-logo img {
+  max-height: 50px;
+  max-width: 100%;
+}
+.event-info {
+  flex: 1;
+}
+
+hr.section-divider {
+  border: none;
+  height: 3px;
+  background: linear-gradient(to right, #00114f, #0099cc);
+  border-radius: 2px;
+  margin: 2em 0;
+}
+
+.past-events .event-info {
+  font-size: 0.9rem;
+  color: #666;
+}
+.past-events .event-info p {
+  margin: 0.3em 0;
+}
