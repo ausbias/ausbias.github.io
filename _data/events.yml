@@ -25,3 +25,17 @@
   url: "https://groups.google.com/g/ausbias"
   description: "Our monthly meeting for April. Cameron Nowell to discuss \"various things\".\n Join the Google Group for link and details."
   logo: "/assets/images/banner_logo_T.png"
+
+- title: "BOMP FIJI Workshops"
+  date: "2025-05-05"
+  location: "Melbourne, Australia"
+  description: "BOMP Fiji workshops, Fiji for Beginners, Fiji for Quantification. Presented by Paul McMillan and Ellie Cho."
+  url: "https://microscopy.unimelb.edu.au/news-and-events/bomp-workshops-in-2025"
+  logo: "/assets/images/unimelb_logo.svg"
+
+- title: "LMA: Introduction to Bioimage Analysis Webinar"
+  date: "2025-05-27"
+  location: "Online Webinar"
+  url: "https://unimelb.zoom.us/webinar/register/WN_g2ldPydbQeC2uBpmc1uBeQ#/registration"
+  description: "Third in a series of Fundamentals in Fluorescence Microscopy Webinars - run in association with Light Microscopy Australia, by the Biological Optical Microscopy Platform at the University of Melbourne (BOMP), presented by Ellie Cho."
+  logo: "/assets/images/lma_logo.jpg"

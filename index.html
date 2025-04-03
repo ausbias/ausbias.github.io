@@ -58,7 +58,20 @@ h1, h2, h3, h4, h5, h6,
 We are a community of researchers, developers, and image analysts dedicated to advancing the field of bioimage analysis in Australia. Our mission is to foster collaboration, share knowledge, and support the growth of image analysis expertise across life sciences and biomedical research.
 
 <hr class="section-divider">
-<h3>Latest News </h3>
+<h3>Latest News and Announcements </h3>
+<div class="wrapper">
+  <div class="announcement-banner">
+    <p id="announcement-text">
+      <a href="{{ site.data.announcements[0].url }}">{{ site.data.announcements[0].message }}</a>
+    </p>
+    <div class="announcement-controls">
+      <button id="prev-announcement">◀️</button>
+      <button id="next-announcement">▶️</button>
+    </div>
+  </div>
+</div>
+
+<h3 style="margin-top: 2em;">Latest Post </h3>
 
 {% assign latest_post = site.posts.first %}
 {% if latest_post %}
@@ -71,9 +84,13 @@ We are a community of researchers, developers, and image analysts dedicated to a
 {% else %}
   <p>No news yet. Check back soon!</p>
 {% endif %}
+
+
+
+
+
 <hr class="section-divider">
 <div class="columns">
-
   <div class="column-left">
   <h3> Parents and Affiliated Societies </h3>
     <div style="display: flex; flex-direction: column; gap: 1.5em; margin-top: 1em;">
@@ -93,11 +110,42 @@ We are a community of researchers, developers, and image analysts dedicated to a
   </div> 
 
   <div class="column-right">
-    <a href="https://www.globias.org/activities/annual-workshop-kobe-2025" target="_blank">
+    <a href="https://www.globias.org/activities/bioimage-analysis-conference-2025-in-kobe" target="_blank">
       <img src="/assets/images/GloBIAS2025_advertising-poster_v1.2.0-1.png" alt="Globias2025 advertising poster">
     </a>
-    <p><a href="https://www.globias.org/activities/annual-workshop-kobe-2025" target="_blank">Click to go to Globias Site</a></p>
+    <p><a href="https://www.globias.org/activities/bioimage-analysis-conference-2025-in-kobe" target="_blank">Click to go to Globias Site</a></p>
   </div>
 
 </div>
 
+<script>
+  const announcements = {{ site.data.announcements | jsonify }};
+  let current = 0;
+  const announcementText = document.getElementById("announcement-text");
+
+  function showAnnouncement() {
+    announcementText.classList.add("fade-out");
+
+    setTimeout(() => {
+      announcementText.innerHTML = `<a href="${announcements[current].url}">${announcements[current].message}</a>`;
+      announcementText.classList.remove("fade-out");
+    }, 500); // match the CSS transition time
+  }
+
+  // Auto-rotate
+  setInterval(() => {
+    current = (current + 1) % announcements.length;
+    showAnnouncement();
+  }, 5000);
+
+  // Manual buttons
+  document.getElementById("prev-announcement").addEventListener("click", () => {
+    current = (current - 1 + announcements.length) % announcements.length;
+    showAnnouncement();
+  });
+
+  document.getElementById("next-announcement").addEventListener("click", () => {
+    current = (current + 1) % announcements.length;
+    showAnnouncement();
+  });
+</script>
