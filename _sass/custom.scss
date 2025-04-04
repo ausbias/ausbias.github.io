@@ -147,10 +147,12 @@ hr.section-divider {
 .site-title {
   font-size: 1.8rem;
   margin-bottom: 0.5em;
+  z-index: 1;
 }
 
 .site-nav {
   margin-top: 0.5em;
+  z-index: 1;
 }
 
 .site-nav .nav {
