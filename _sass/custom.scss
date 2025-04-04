@@ -154,6 +154,9 @@ hr.section-divider {
   position: static;
   margin-top: 0.5em;
   z-index: 1;
+  border: none;
+  background: transparent;
+  border-radius: 0
 }
 
 .site-nav .nav {
@@ -183,3 +186,12 @@ hr.section-divider {
   }
 }
 
+@media (max-width: 699px) {
+  .site-title {
+    margin-bottom: 0.2em;
+  }
+
+  .site-nav {
+    margin-top: 0.2em;
+  }
+}
