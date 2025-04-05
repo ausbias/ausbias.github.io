@@ -171,6 +171,7 @@ hr.section-divider {
 
 @media (min-width: 700px) {
   .site-header .wrapper {
+    position: relative;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
