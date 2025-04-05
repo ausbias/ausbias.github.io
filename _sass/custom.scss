@@ -197,3 +197,8 @@ hr.section-divider {
     margin-top: 0.2em;
   }
 }
+
+.site-header {
+  position: relative;
+  z-index: 1000;
+}
