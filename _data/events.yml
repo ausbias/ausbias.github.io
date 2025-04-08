@@ -39,3 +39,17 @@
   url: "https://unimelb.zoom.us/webinar/register/WN_g2ldPydbQeC2uBpmc1uBeQ#/registration"
   description: "Third in a series of Fundamentals in Fluorescence Microscopy Webinars - run in association with Light Microscopy Australia, by the Biological Optical Microscopy Platform at the University of Melbourne (BOMP), presented by Ellie Cho."
   logo: "/assets/images/lma_logo.jpg"
+
+- title: "LMA FIJI/ImageJ Workshop (2 day)"
+  date: "2025-04-22"
+  location: "University of Sydney"
+  url: "https://www.stickytickets.com.au/WCWLS"
+  description: "LMA FIJI Workshop - workshop hosted by Cameron Nowell (Monash University) and Pamela Young (University of Sydney)." 
+  logo: "/assets/imaging/lma_logo.jpg"
+
+- title: "Fiji and Friends - AI and ML Using Open Source Software"
+  date: "2025-04-24"
+  location: "University of Sydney"
+  url: "https://www.stickytickets.com.au/Y3PE2"
+  description: "Cellpose/startdist/ilastik and more! Hands on workshop hosted by Cameron Nowell (Monash University) and Pamela Young (University of Sydney)." 
+  logo: "/assets/imaging/lma_logo.jpg"

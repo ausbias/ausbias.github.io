@@ -1,0 +1,59 @@
+---
+layout: default
+---
+{% assign member = site.data.members | where: "username", page.name | first %}
+
+<article class="profile">
+
+  <div class="profile-header">
+    {% if member.photo %}
+      <img src="{{ member.photo | relative_url }}" alt="{{ member.name }}" class="profile-photo">
+    {% endif %}
+
+    <div class="profile-info">
+      <h1>{{ member.name }}</h1>
+      <p><strong>Affiliation:</strong> {{ member.affiliation }}</p>
+      <p><strong>Role:</strong> {{ member.role }}</p>
+
+      {% if member.orcid %}
+        <p><strong>ORCID:</strong> <a href="{{ member.orcid }}">{{ member.orcid }}</a></p>
+      {% endif %}
+      {% if member.scholar %}
+        <p><strong>Google Scholar:</strong> <a href="{{ member.scholar }}">{{ member.scholar }}</a></p>
+      {% endif %}
+      {% if member.website %}
+        <p><strong>Website:</strong> <a href="{{ member.website }}">{{ member.website }}</a></p>
+      {% endif %}
+      {% if member.bsky %}
+        <p><strong>Bluesky:</strong> <a href="{{ member.bsky }}">{{ member.bsky }}</a></p>
+      {% endif %}
+    </div>
+  </div>
+
+  <div class="profile-bio">
+    <p>{{ member.bio }}</p>
+  </div>
+
+  {% if member.interests %}
+    <div class="profile-section">
+      <h3>Interests</h3>
+      <ul>
+        {% for interest in member.interests %}
+          <li>{{ interest }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+  {% endif %}
+
+  {% if member.specialities %}
+    <div class="profile-section">
+      <h3>Specialities</h3>
+      <ul>
+        {% for skill in member.specialities %}
+          <li>{{ skill }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+  {% endif %}
+
+</article>

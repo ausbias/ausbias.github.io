@@ -207,3 +207,51 @@ hr.section-divider {
 .page-content{
   padding-top: 20px;
 }
+
+
+.profile {
+  max-width: 900px;
+  margin: 2em auto;
+  padding: 1.5em;
+  background: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.profile-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.5em;
+}
+
+.profile-photo {
+  width: 180px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  flex-shrink: 0;
+}
+
+.profile-info {
+  flex: 1 1 300px;
+}
+
+.profile-bio {
+  margin-top: 1.5em;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.profile-section {
+  margin-top: 2em;
+}
+
+.profile-section h3 {
+  margin-bottom: 0.5em;
+}
+
+.profile-section ul {
+  margin: 0;
+  padding-left: 1.2em;
+}

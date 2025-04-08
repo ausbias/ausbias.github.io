@@ -1,0 +1,29 @@
+- username: lachlan-whitehead
+  name: Lachlan Whitehead
+  affiliation: WEHI
+  role: Image Analyst - Head of Bioimage Anlaysis Core
+  photo: /assets/images/profiles/lachie.jpg
+  scholar: https://scholar.google.com.au/citations?user=x_he-iIAAAAJ&hl=en
+  website: https://www.wehi.edu.au/collaborative-centre/centre-for-dynamic-imaging/bioimage-analysis-core/
+  bsky: https://bsky.app/profile/drlachie.bsky.social
+  interests:
+   - Bioimage Analysis
+   - Deep learning 
+   - HPC utilisation for image processing 
+  specialities:
+    - Fiji
+    - Python 
+    - HPC processing
+  bio: >
+    Lachlan has been a bioimage analyst at WEHI for over a decade, and now runs the Bioimage Analysis Core in the Center for Dynamic Imaging.
+    He was a founding member of AusBIAS. 
+
+- username: jane-doe
+  name: Jane Doe
+  affiliation: University of Imaginary Research
+  role: Bioimage Software Developer
+  photo: /assets/images/profiles/jane.jpg
+  website: https://janedoe.org
+  bsky: https://bsky.app/profile/janedoe.bsky.social
+  bio: >
+    Jane focuses on open source tools for multi-modal imaging and leads training programs across Asia-Pacific.

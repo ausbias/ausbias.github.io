@@ -44,3 +44,8 @@ pages:
 
 sass:
   style: compressed
+
+collections:
+  members:
+    output: true
+    permalink: /members/:name/
