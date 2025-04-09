@@ -30,8 +30,8 @@ layout: default
     </div>
   </div>
 
-  <div class="profile-bio" | markdownify >
-    <p>{{ member.bio }}</p>
+  <div class="profile-bio"  >
+    <p>{{ member.bio | markdownify }}</p>
   </div>
 
   {% if member.interests %}
