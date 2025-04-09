@@ -14,7 +14,7 @@ There are sometimes issues with using institute email addresses, they can be add
 
 ## Social Media & Community
 Stay connected with us through our online communities:
-- **Blusky:** [@AusBIAS.bsky.social](https://ausbias.bsky.social) 
+- **Blusky:** [@AusBIAS.bsky.social](https://bsky.app/profile/ausbias.org) 
 - **GitHub:** [Australian Bioimage Analysts](https://github.com/ausbias)
 
 ## Events & Meetings

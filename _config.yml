@@ -3,7 +3,7 @@ email: "-"
 description: >
   The Australian Bioimage Analysts' Society is dedicated to supporting and connecting bioimage analysts across Australia.
 baseurl: ""
-url: "https://drlachie.github.io"
+url: "https://ausbias.org"
 
 plugins:
   - jekyll-feed
