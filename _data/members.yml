@@ -10,13 +10,17 @@
    - Bioimage Analysis
    - Deep learning 
    - HPC utilisation for image processing 
-   - 3D Modelling
+   - 3D Modelling and animation
   specialities:
     - Fiji
     - Python 
     - HPC processing
+    - Blender3D 
   bio: >
     Lachlan has been a bioimage analyst at WEHI for over a decade, and now runs the Bioimage Analysis Core in the Center for Dynamic Imaging.
+    Graduating in 2011 with a PhD in Physics (X-ray diffractive imaging), he now somehow finds himself in a biomedical resarch institute. 
+    Alongside image anlaysis, he has produced several 3d-rendered graphical abstracts for high-impact journal publications, and post
+    extremely niche humours animations under the hashtag [#microscopistsNightmares](https://www.youtube.com/@MicroscopistsNightmares). 
     He was a founding member of AusBIAS. 
 
 - username: jane-doe
@@ -28,3 +32,23 @@
   bsky: https://bsky.app/profile/janedoe.bsky.social
   bio: >
     Jane focuses on open source tools for multi-modal imaging and leads training programs across Asia-Pacific.
+
+- username: nicolas-condon
+  name: Nicholas Condon
+  affiliation: The University of Queensland
+  role: Senior Principal Imaging Scientist
+  photo: /assets/images/profiles/nicC.jpg
+  scholar: https://scholar.google.com/citations?user=SoSsKFQAAAAJ&hl=en
+  website: https://imb.uq.edu.au/profile/356/nicholas-condon
+  #bsky: https://bsky.app/profile/drlachie.bsky.social
+  interests:
+   - Light Microscopy
+   - Image analysis 
+   - Live Imaging
+  specialities:
+    - Big Data
+    - High Performance Computing (HPC) 
+    - Virtualisation of image analysis desktops
+    - Fiji/Imaris/Arivis (Advanced), Napari/Cell Profiler/QuPath (Intermediate)
+  bio: >
+    Nicholas is a Senior Principal Imaging in the Institute for Molecular Bioscience Microscopy Core Facility. He has over 8 years’ experience working in a collaborative imaging facility, developing training courses, new methodologies, and data analysis pipelines. Nicholas completed his PhD in 2018 within the lab of Jennifer Stow (IMB, University of Queensland) where he used advanced light microscopy to make novel discoveries in micropinocytosis and cellular surface behaviours. He has worked with many researchers around the Australia on different imaging techniques and participates in international committees, advisory boards and working groups on various topics associated with microscopy and image processing/analysis
