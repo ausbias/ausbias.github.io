@@ -10,7 +10,7 @@ We respect the privacy and preferences of all our members. This directory includ
 <ul>
   {% for member in site.data.members %}
     <li>
-      <a href="/members/{{ member.username }}/">{{ member.name }}</a>
+      <a href="/members/{{ member.username }}/">{{ member.name }} – {{ member.affiliation }}</a>
     </li>
   {% endfor %}
 </ul>
