@@ -53,3 +53,10 @@
   url: "https://www.stickytickets.com.au/Y3PE2"
   description: "Cellpose/startdist/ilastik and more! Hands on workshop hosted by Cameron Nowell (Monash University) and Pamela Young (University of Sydney)." 
   logo: "/assets/images/lma_logo.jpg"
+
+- title: "AusBIAS Monthly Zoom Meeting (May 2025)"
+  date: "2025-05-016"
+  location: "Melbourne, Australia"
+  url: "https://groups.google.com/g/ausbias"
+  description: "Our monthly meeting for May. Presenter/Topic TBC."
+  logo: "/assets/images/banner_logo_T.png"
