@@ -43,7 +43,7 @@ The paper goes on to discuss “Enabling sustainable career paths in BIA”.  An
 I think everyone’s favourite part of the paper was Figure 3: A concise etiquette guide for interacting with BIA specialists.  I felt this Venn diagram was missing **“Bring snacks to share”** in the "Dos" circle.   
 
 <a href="/assets/images/blogposts/20250417/joces-137-262322-g3.jpg" data-lightbox="gallery" data-title="Figure 3: Working with your friednly local bioimage analyst.">
-  <img src="/assets/images/blogposts/20250417/joces-137-262322-g3.jpg" alt="..." style="display: block; margin: 2em auto; max-width: 100%; height: auto;"">
+  <img src="/assets/images/blogposts/20250417/joces-137-262322-g3.jpg" alt="..." style="display: block; margin: 2em auto; max-width: 100%; height: auto;"g>
 </a>
 
 The paper ends offering What can we do? What do we need? 
