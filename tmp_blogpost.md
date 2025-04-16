@@ -37,19 +37,19 @@ Which resulted in this paper.  Which opens explaining that “Bioimage analysis 
 The paper goes on to discuss “Enabling sustainable career paths in BIA”.  And this was part of what I really wanted to discuss because from earlier AusBIAS meetings, I think we all agree careers in BIA are not very prevalent and careerpaths not well-defined.  The paper discusses some of the reasons for this.  Funding.  Obviously.  And the paper includes an excellent spreadsheet draft to help bioimage analysists justify their existence in $$$.  And the need for culture shift in the world’s attitude toward BIA emphasizing the need for BIA specialists.  See sections “Encouraging a culture shift around the importance of BIA” and “Educating biological researchers about BIA”. 
 
 <a href="/assets/images/blogposts/20250417/joces-137-262322-g2.jpg" data-lightbox="gallery" data-title="Figure 2: Major barriers to effective uptake of BIA.">
-  <img src="/assets/images/blogposts/20250417/joces-137-262322-g2.jpg" alt="..." style="float: right; margin: 1em; max-height: 300;">
+  <img src="/assets/images/blogposts/20250417/joces-137-262322-g2.jpg" alt="..." style="float: right; margin: 1em; max-width: 300px;">
 </a>
 
 I think everyone’s favourite part of the paper was Figure 3: A concise etiquette guide for interacting with BIA specialists.  I felt this Venn diagram was missing **“Bring snacks to share”** in the "Dos" circle.   
 
 <a href="/assets/images/blogposts/20250417/joces-137-262322-g3.jpg" data-lightbox="gallery" data-title="Figure 3: Working with your friednly local bioimage analyst.">
-  <img src="/assets/images/blogposts/20250417/joces-137-262322-g3.jpg" alt="..." style=" max-height: 350px;">
+  <img src="/assets/images/blogposts/20250417/joces-137-262322-g3.jpg" alt="..." style="display: block; margin: 2em auto; max-width: 100%; height: auto;"">
 </a>
 
 The paper ends offering What can we do? What do we need? 
 
 <a href="/assets/images/blogposts/20250417/joces-137-262322-g4.jpg" data-lightbox="gallery" data-title="Figure 4: A vision for the future of the BIA community.">
-  <img src="/assets/images/blogposts/20250417/joces-137-262322-g4.jpg" alt="..." style=" max-height: 350px;">
+  <img src="/assets/images/blogposts/20250417/joces-137-262322-g4.jpg" alt="..." style="display: block; margin: 2em auto; max-width: 100%; height: auto;">
 </a>
 
 
