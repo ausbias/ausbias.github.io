@@ -30,7 +30,9 @@ The goals of this workshop were (directly cut and pasted from the website)
 Which resulted in this paper.  Which opens explaining that “Bioimage analysis as an emerging discipline.” _Effective BIA requires a comprehensive understanding of several diverse fields, including image processing, complex workflow creation ([Cimini, 2024](https://pmc.ncbi.nlm.nih.gov/articles/PMC11449385/)
 ; [Miura and Nørrelykke, 2021](https://pmc.ncbi.nlm.nih.gov/articles/PMC7849301/)) and, increasingly, familiarity with data management, IT infrastructure and deep learning (Fig. 1)_ 
 
-![Figure 1](/assets/images/blogposts/20250417/joces-137-262322-g1.jpg){: height="200" }
+<a href="/assets/images/blogposts/20250417/joces-137-262322-g1.jpg" data-lightbox="gallery" data-title="Figure 1">
+  <img src="/assets/images/blogposts/20250417/joces-137-262322-g1.jpg" alt="..." style="max-width: 300px;">
+</a>
 
 The paper goes on to discuss “Enabling sustainable career paths in BIA”.  And this was part of what I really wanted to discuss because from earlier AusBIAS meetings, I think we all agree careers in BIA are not very prevalent and careerpaths not well-defined.  The paper discusses some of the reasons for this.  Funding.  Obviously.  And the paper includes an excellent spreadsheet draft to help bioimage analysists justify their existence in $$$.  And the need for culture shift in the world’s attitude toward BIA emphasizing the need for BIA specialists.  See sections “Encouraging a culture shift around the importance of BIA” and “Educating biological researchers about BIA”. 
 
