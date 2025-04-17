@@ -1,5 +1,68 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="https://ausbias.org/feed.xml" rel="self" type="application/atom+xml" /><link href="https://ausbias.org/" rel="alternate" type="text/html" /><updated>2025-04-17T00:25:12+00:00</updated><id>https://ausbias.org/feed.xml</id><title type="html">Australian Bioimage Analysts’ Society</title><subtitle>The Australian Bioimage Analysts&apos; Society is dedicated to supporting and connecting bioimage analysts across Australia.
-</subtitle><entry><title type="html">The AusBIAS Logo</title><link href="https://ausbias.org/blog/2025/03/28/First-post/" rel="alternate" type="text/html" title="The AusBIAS Logo" /><published>2025-03-28T00:00:00+00:00</published><updated>2025-03-28T00:00:00+00:00</updated><id>https://ausbias.org/blog/2025/03/28/First-post</id><content type="html" xml:base="https://ausbias.org/blog/2025/03/28/First-post/"><![CDATA[<h3 id="whats-a-society-without-a-logo">What’s a society without a logo?</h3>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="https://ausbias.org/feed.xml" rel="self" type="application/atom+xml" /><link href="https://ausbias.org/" rel="alternate" type="text/html" /><updated>2025-04-17T05:40:46+00:00</updated><id>https://ausbias.org/feed.xml</id><title type="html">Australian Bioimage Analysts’ Society</title><subtitle>The Australian Bioimage Analysts&apos; Society is dedicated to supporting and connecting bioimage analysts across Australia.
+</subtitle><entry><title type="html">First AusBIAS meeting of 2025 - We’re all in this together</title><link href="https://ausbias.org/blog/2025/04/17/firstMeetingReport_PY/" rel="alternate" type="text/html" title="First AusBIAS meeting of 2025 - We’re all in this together" /><published>2025-04-17T00:00:00+00:00</published><updated>2025-04-17T00:00:00+00:00</updated><id>https://ausbias.org/blog/2025/04/17/firstMeetingReport_PY</id><content type="html" xml:base="https://ausbias.org/blog/2025/04/17/firstMeetingReport_PY/"><![CDATA[<h3 id="pam-young-rambled-a-bit-at-the-first-ausbias-meeting-of-2025">Pam Young rambled a bit at the first AusBIAS meeting of 2025</h3>
+<p>By Pam Young.</p>
+
+<p>AusBIAS had their first meeting of 2025 on March 11.  I put my hand up to journal review this very exciting paper <strong>The crucial role of bioimage analysts in scientific research and publication</strong> by Cimini et al.  You can read it yourself <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11698046/">here</a>.</p>
+
+<p>Unfortunately, all of my good intentions to put together a cohesive presentation went out the window when my WFH day was cancelled and I had to go into the lab, and then in the couple of hours leading up to my presentation when I was scrambling something together, my boss decided to call me 5 times. Luckily most AusBIAS folks know me are used to me flying by the seat of my pants.</p>
+
+<p>So if you still haven’t just clicked on the link to the paper, here is my short synopsis.</p>
+
+<p>In February of 2024, there was a Company of Biologists Workshop “Effectively Communicating Bioimage Analysis” organized by Beth Cimini or the Broad Institute and Kevin Eliceiri of University of Wisconsin (also my former postdoc advisor and a fabulous person). You can find out more about this event <a href="https://www.biologists.com/workshops/february-2024/">here</a>.</p>
+
+<p><a href="/assets/images/blogposts/20250417/joces-137-262322-g1.jpg" data-lightbox="gallery" data-title="Figure 1">
+  <img src="/assets/images/blogposts/20250417/joces-137-262322-g1.jpg" alt="..." style="float: left; margin: 1em; max-width: 300px;" />
+</a></p>
+
+<p>The problem: Bioimage analysis is a critically needed discipline, but is still often seen as an “add-on,” leaving researchers to learn it on their own though these researchers can have a wide range of computational background/ability. And though there are a large number of bioimage analysis resources available, including open source software, these are constantly evolving and don’t have community standards to track these comprehensively and determine what is useful/still useful.  So any materials available need to support a range of user abilities and rarely do.</p>
+
+<p>The goals of this workshop were (directly cut and pasted from the website)</p>
+
+<ul>
+  <li>Map our “landscape” – catalogue globally what efforts are already underway, where do current efforts overlap and so could lead to collaboration or de-duplication, where funding may come from, and who can we can tap for more community involvement and/or promotion.</li>
+  <li>Bring together both users and creators of training materials and courses, to share lessons of what has worked and what has not in terms of training effectiveness and material dissemination.</li>
+  <li>Curate the resources that currently exist, and brainstorm how these can be shared more effectively or used in novel ways, such as in the creation of flipped classroom curricula.</li>
+  <li>Create a draft set of standards to recommend to stakeholders, such as funding agencies, organizations with influence on graduate training, or others.</li>
+</ul>
+
+<p>Which resulted in this paper.  Which opens explaining that “Bioimage analysis as an emerging discipline.” <em>Effective BIA requires a comprehensive understanding of several diverse fields, including image processing, complex workflow creation (<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11449385/">Cimini, 2024</a>
+; <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7849301/">Miura and Nørrelykke, 2021</a>) and, increasingly, familiarity with data management, IT infrastructure and deep learning</em> (See Fig. 1 above)</p>
+
+<p><a href="/assets/images/blogposts/20250417/joces-137-262322-g2.jpg" data-lightbox="gallery" data-title="Figure 2: Major barriers to effective uptake of BIA.">
+  <img src="/assets/images/blogposts/20250417/joces-137-262322-g2.jpg" alt="..." style="float: right; margin: 1em; max-width: 300px;" />
+</a></p>
+
+<p>The paper goes on to discuss “Enabling sustainable career paths in BIA”.  And this was part of what I really wanted to discuss because from earlier AusBIAS meetings, I think we all agree careers in BIA are not very prevalent and careerpaths not well-defined.  The paper discusses some of the reasons for this.  Funding.  Obviously.  And the paper includes an excellent spreadsheet draft to help bioimage analysists justify their existence in $$$.  And the need for culture shift in the world’s attitude toward BIA emphasizing the need for BIA specialists.  See sections “Encouraging a culture shift around the importance of BIA” and “Educating biological researchers about BIA”.</p>
+
+<p>I think everyone’s favourite part of the paper was Figure 3: A concise etiquette guide for interacting with BIA specialists.  I felt this Venn diagram was missing <strong>“Bring snacks to share”</strong> in the “Dos” circle.</p>
+
+<p><a href="/assets/images/blogposts/20250417/joces-137-262322-g3.jpg" data-lightbox="gallery" data-title="Figure 3: Working with your friednly local bioimage analyst.">
+  <img src="/assets/images/blogposts/20250417/joces-137-262322-g3.jpg" alt="..." style="display: block; margin: 2em auto; max-width: 80%; height: auto;" />
+</a></p>
+
+<p>The paper ends offering What can we do? What do we need?</p>
+
+<p><a href="/assets/images/blogposts/20250417/joces-137-262322-g4.jpg" data-lightbox="gallery" data-title="Figure 4: A vision for the future of the BIA community.">
+  <img src="/assets/images/blogposts/20250417/joces-137-262322-g4.jpg" alt="..." style="display: block; margin: 2em auto; max-width: 80%; height: auto;" />
+</a></p>
+
+<p>As well as 6 key actions:</p>
+<ol>
+  <li>Enhancing visibility</li>
+  <li>Building empathy and collaboration</li>
+  <li>Highlighting unique contributions</li>
+  <li>Advocating for standards in publishing</li>
+  <li>Securing support from funders</li>
+  <li>Emphasizing the importance of user support</li>
+</ol>
+
+<p>I highly recommend anyone who made it to the end going back and reading the paper.  Clearly you are interested, and they wrote it much better than my summary.  Read it <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11698046/">here</a>.</p>
+
+<hr />
+
+<p>Postscript:</p>
+
+<p>We would like to acknowledge and thank the authors and publishers of this paper for sharing it under Creative Commons Attribution License. The open science philosophy is greatly valued in the bioimage analysis community.</p>]]></content><author><name>pamela-young</name></author><category term="news" /><category term="updates" /><summary type="html"><![CDATA[Pam Young rambled a bit at the first AusBIAS meeting of 2025 By Pam Young.]]></summary></entry><entry><title type="html">The AusBIAS Logo</title><link href="https://ausbias.org/blog/2025/03/28/First-post/" rel="alternate" type="text/html" title="The AusBIAS Logo" /><published>2025-03-28T00:00:00+00:00</published><updated>2025-03-28T00:00:00+00:00</updated><id>https://ausbias.org/blog/2025/03/28/First-post</id><content type="html" xml:base="https://ausbias.org/blog/2025/03/28/First-post/"><![CDATA[<h3 id="whats-a-society-without-a-logo">What’s a society without a logo?</h3>
 
 <p>When we first decided we needed a website, the first question was obviously: what should our logo be.</p>
 
