@@ -66,4 +66,4 @@ I highly recommend anyone who made it to the end going back and reading the pape
 <HR>
 Postscript: 
 
-We would like to acknowledge and thank the authors and publishers of this paper for sharing it under Creative Commons Attribution License. The open science philosophy is greatly valued in the bioimage analysis community. 
+We would like to acknowledge and thank the authors and publishers of this paper for sharing it under Creative Commons Attribution License. The open science philosophy is greatly valued in the bioimage analysis community. All figures in this blog post are from “The crucial role of bioimage analysts in scientific research and development” by Cimini et al., Journal of Cell Science, licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).​
