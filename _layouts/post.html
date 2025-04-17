@@ -48,11 +48,19 @@ layout: base
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 
   {%- if page.author -%}
-  <div class="post-meta">
-    <span>Written by {{ page.author }}</span>
-    {%- if page.bsky -%}
-      • <a href="{{ page.bsky }}" target="_blank">Bluesky</a>
-    {%- endif -%}
-  </div>
-  {%- endif -%}  
+    {% assign author = site.data.members | where: "username", page.author | first %}
+    <div class="post-meta">
+      <span>Written by 
+        {% if author %}
+          <a href="/members/{{ author.username }}/">{{ author.name }}</a>
+        {% else %}
+          {{ page.author }}
+        {% endif %}
+      </span>
+      
+      {%- if author.bsky -%}
+        • <a href="{{ author.bsky }}" target="_blank">Bluesky</a>
+      {%- endif -%}
+    </div>
+  {%- endif -%} 
 </article>
