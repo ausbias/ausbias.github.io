@@ -3,7 +3,7 @@ layout: post
 title:  "The AusBIAS Logo"
 date:   2025-03-28
 categories: [news, updates]
-author: Lachlan Whitehead
+author: lachlan-whitehead
 bsky: "https://bsky.app/profile/drlachie.bsky.social"
 ---
 
