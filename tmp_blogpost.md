@@ -3,7 +3,7 @@ layout: post
 title:  "First AusBIAS meeting of 2025 - We're all in this together "
 date:   2025-04-17
 categories: [news, updates]
-author: Pamela Young
+author: pamela-young
 bsky: "https://bsky.app/profile/pammer61.bsky.social"
 ---
 

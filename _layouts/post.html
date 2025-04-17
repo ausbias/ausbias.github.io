@@ -20,15 +20,20 @@ layout: base
           {{ mdate | date: date_format }}
         </time>
       {%- endif -%}
-      {%- if page.author %}
-      <div class="{% unless page.modified_date %}force-inline {% endunless %}post-authors">
-        {%- for author in page.author %}
+      {% assign author = site.data.members | where: "username", page.author | first %}
+      {% if author %}
+        <div class="post-authors">
           <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-            <span class="p-author h-card" itemprop="name">{{ author }}</span></span>
-          {%- if forloop.last == false %}, {% endif -%}
-        {% endfor %}
-      </div>
-      {%- endif %}
+            <a class="p-author h-card" itemprop="name" href="/members/{{ author.username }}/">
+              {{ author.name }}
+            </a>
+          </span>
+        </div>
+      {% else %}
+        <div class="post-authors">
+          <span class="p-author h-card">{{ page.author }}</span>
+        </div>
+      {% endif %}
     </div>
   </header>
 
