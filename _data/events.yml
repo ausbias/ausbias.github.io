@@ -74,3 +74,10 @@
   url: "https://docs.google.com/forms/d/e/1FAIpQLSdubNzFl2sozK9BG-JWsj6ejZkQbYnAdrVD050tiUUGIfTcJg/viewform?usp=sharing&ouid=105220311148167254359"
   description: "1 day AI/ML workshop is geared more towards users with some experience with image analysis . Presented by Cameron Nowell."
   logo: "/assets/images/monash-logo-mono.svg"
+
+- title: "WEHI QuPath Workshop"
+  date: "2025-07-17"
+  location: "Walter and Eliza Hall Institute of Medical Research"
+  url: "https://forms.monday.com/forms/a47059462c55c96ed483f0f2e3816ffd?r=apse2"
+  description: "A one-day workshop in the use of QuPath for tissue analysis. Presented by the Bioimage Analysis Core at WEHI. Externals welcome to apply to participate remotely."
+  logo: "/assets/images/wehi_logo.jpg"
