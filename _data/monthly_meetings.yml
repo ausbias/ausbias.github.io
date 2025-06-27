@@ -24,7 +24,15 @@
   contact: "/contact/"
 
 - date: 2025-11-28
-  speakers: "Lachlan Whitehead"
+  speakers: 
+    - name: "Lachlan Whitehead"
+    - url: "/members/lachlan-whitehead"
   discussion: "GloBIAS Wrap-Up"
   contact: "/contact/"
 
+- date: 2025-12-19
+  speakers: 
+    - name: "Santa"
+    - url: "https://en.wikipedia.org/wiki/Santa_Claus"
+  discussion: "AusBIAS Christmas Party"
+  contact: "/contact/"

@@ -18,10 +18,18 @@ permalink: /monthly-meeting/
     </tr>
   </thead>
   <tbody>
-    {% for meeting in site.data.monthly_meetings %}
-    <tr>
+      {% for meeting in site.data.monthly_meetings %}
+      <tr>
       <td>{{ meeting.date }}</td>
-      <td>{{ meeting.speakers }}</td>
+      <td>
+            {% for sp in meeting.speakers %}
+                {% if sp.url %}
+                <a href="{{ sp.url }}">{{ sp.name }}</a>{% unless forloop.last %}, {% endunless %}
+                {% else %}
+                {{ sp.name }}{% unless forloop.last %}, {% endunless %}
+                {% endif %}
+            {% endfor %}
+      </td>
       <td>{{ meeting.discussion }}</td>
       <td><a href="{{ meeting.contact }}">Nominate</a></td>
     </tr>
