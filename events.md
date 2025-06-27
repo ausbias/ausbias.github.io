@@ -4,7 +4,7 @@ title: Events
 ---
 # Events
 
-AusBIAS organises monthly meetings, usually online, where often one member will lead discussion of a paper, method, or problem of the day. We are also involved in hosting training courses at our various institutions, and supporting local conferences.
+AusBIAS organises <a href="/monthly-meeting/">monthly meetings</a>, usually online, where often one member will lead discussion of a paper, method, or problem of the day. We are also involved in hosting training courses at our various institutions, and supporting local conferences.
 
 <h2>Upcoming Events</h2>
 
