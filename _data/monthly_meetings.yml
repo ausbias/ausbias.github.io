@@ -1,43 +1,50 @@
 - date: 2025-06-27
+  time: 11:00 (AEST)
   speakers: 
    - name: "Open Discussion"
   discussion: "Links with LMA, updates to schedule, future workshops"
-  contact: "/contact/"
+
 
 - date: 2025-07-25
+  time: 13:00 (AEST)
   speakers:
     - name: "TBC"
   discussion: "TBC"
-  contact: "/contact/"
+
 
 - date: 2025-08-28
+  time: 13:00 (AEST)
   speakers:   
     - name: "TBC"
   discussion: "TBC"
-  contact: "/contact/"
+
 
 - date: 2025-09-26
+  time: 13:00 (AEST)
   speakers: 
       - name: "TBC"
   discussion: "TBC"
-  contact: "/contact/"
+
 
 - date: 2025-10-24
+  time: 13:00 (AEST)
   speakers: 
       - name: "TBC"
   discussion: "TBC"
-  contact: "/contact/"
+  
 
 - date: 2025-11-28
+  time: 13:00 (AEST)
   speakers: 
     - name: "Lachlan Whitehead"
       url: "/members/lachlan-whitehead"
   discussion: "GloBIAS Wrap-Up"
-  contact: "/contact/"
+  
 
 - date: 2025-12-19
+  time: 13:00 (AEST)
   speakers: 
     - name: "Santa"
       url: "https://en.wikipedia.org/wiki/Santa_Claus"
   discussion: "AusBIAS Christmas Party"
-  contact: "/contact/"
+  
