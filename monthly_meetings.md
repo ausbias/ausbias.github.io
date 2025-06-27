@@ -8,7 +8,7 @@ permalink: /monthly-meeting/
 
 <p>Below is a summary of upcoming and past monthly meetings. If you would like to nominate a speaker or suggest a discussion topic, please <a href="/contact/">contact us</a>.</p>
 
-<table><table>
+<table class="meeting-table">
   <thead>
     <tr>
       <th>Date</th>

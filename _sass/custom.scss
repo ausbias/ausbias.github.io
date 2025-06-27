@@ -255,3 +255,38 @@ hr.section-divider {
   margin: 0;
   padding-left: 1.2em;
 }
+
+.meeting-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 2em;
+  font-size: 1rem;
+  color: $text-color; // fallback to your theme's main text color
+}
+
+.meeting-table th,
+.meeting-table td {
+  border: 1px solid $border-color-01; // use a soft grey or define your own
+  padding: 0.75em 1em;
+  text-align: left;
+  vertical-align: top;
+}
+
+.meeting-table th {
+  background-color: $background-color;
+  font-weight: bold;
+}
+
+.meeting-table tr:nth-child(even) {
+  background-color: $background-color-secondary; // or hardcode a light grey
+}
+
+.meeting-table a {
+  color: $link-base-color;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+    color: $link-hover-color;
+  }
+}
