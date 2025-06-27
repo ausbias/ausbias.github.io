@@ -20,7 +20,7 @@ permalink: /monthly-meeting/
   <tbody>
       {% for meeting in site.data.monthly_meetings %}
       <tr>
-      <td>{{ meeting.date }}</td>
+      <td>{{ meeting.date | date: "%B %d, %Y" }}</td>
       <td>
             {% for sp in meeting.speakers %}
                 {% if sp.url %}
