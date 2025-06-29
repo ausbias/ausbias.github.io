@@ -1,3 +1,22 @@
+- date: 2025-03-11
+  time: 12:00 Midday (AEST)
+  speakers:
+    - name: "Pamela Young"
+      url: "/members/pamela-young/"
+  discussion: "A review of ***The crucial role of bioimage analysts in scientific research and publication*** by Cimini et al. "
+
+- date: 2025-04-08
+  time: 12:00 Midday (AEST)
+  speakers:
+    - name: "Cam Nowell"
+  discussion: "A review of projects, tools, and resources in a microscopy core facility"
+
+- date: 2025-05-16
+  time: 11:00 (AEST)
+  speakers:
+    - name: "Pradeep Rajasekhar"
+  discussion: "An overview of deepImageJ and BIoimageIO"
+
 - date: 2025-06-27
   time: 11:00 (AEST)
   speakers: 
@@ -8,8 +27,8 @@
 - date: 2025-07-25
   time: 13:00 (AEST)
   speakers:
-    - name: "TBC"
-  discussion: "TBC"
+    - name: "Ishrat Zaman"
+  discussion: "Big Brains, Small Targets: Whole-Brain Image Analysis with Python & Its Challenges"
 
 
 - date: 2025-08-28
@@ -48,3 +67,5 @@
       url: "https://en.wikipedia.org/wiki/Santa_Claus"
   discussion: "AusBIAS Christmas Party"
   
+
+
