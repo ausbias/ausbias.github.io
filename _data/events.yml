@@ -81,3 +81,10 @@
   url: "https://forms.monday.com/forms/a47059462c55c96ed483f0f2e3816ffd?r=apse2"
   description: "A one-day workshop in the use of QuPath for tissue analysis. Presented by the Bioimage Analysis Core at WEHI. Externals welcome to apply to participate remotely."
   logo: "/assets/images/wehi_logo.jpg"
+
+- title: "FIJI Macro Writing workshop"
+  date: "2025-08-06"
+  location: "The University of Melbourne - Medical Building"
+  url: "https://docs.google.com/forms/d/e/1FAIpQLSeRNSvOoo0Y3W0_ZLAU4IxZbZ85gJnhlM1VThHFrFWgi7jsTg/viewform"
+  description: "The FIJI Macro Writing for Biologists workshop runs over two days (6th & 7th August 2025). It is designed to enable researchers to automate and to add additional complexity to their FIJI analysis pipelines using macro recording and coding. To get the most out of this workshop, you should be a frequent user of FIJI and have your own image analysis workflow that you want to automate"
+  logo: "/assets/images/unimelb_logo.svg"
