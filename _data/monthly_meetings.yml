@@ -38,17 +38,17 @@
   discussion: "A review of ZIDAS - Switzerland's Image & Data Analysis School"
 
 
-- date: 2025-09-26
+- date: 2025-09-25
   time: 13:00 (AEST)
   speakers: 
-      - name: "TBC"
+      - name: "Eliie Cho"
   discussion: "TBC"
 
 
 - date: 2025-10-24
   time: 13:00 (AEST)
   speakers: 
-      - name: "TBC"
+      - name: "Michael McKay"
   discussion: "TBC"
   
 
@@ -57,6 +57,10 @@
   speakers: 
     - name: "Lachlan Whitehead"
       url: "/members/lachlan-whitehead"
+    - name: "Nic Condon"
+      url: "/members/nicholas-condon/"
+    - name: "Ellie Cho"
+      url: "/members/ellie-cho/"
   discussion: "GloBIAS Wrap-Up"
   
 
