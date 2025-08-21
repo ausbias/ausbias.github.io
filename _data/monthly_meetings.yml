@@ -15,6 +15,7 @@
   time: 11:00 (AEST)
   speakers:
     - name: "Pradeep Rajasekhar"
+      url: "/members/pradeep-rajasekhar/"
   discussion: "An overview of deepImageJ and BIoimageIO"
 
 - date: 2025-06-27
