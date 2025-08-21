@@ -91,3 +91,22 @@
     Ellie loves helping researchers through consultation, collaboration, and workshops, taking a creative approach to morphological analysis as an image analyst with a biologist's brain.
     
 
+- username: pradeep-rajasekhar
+  name: Pradeep Rajasekhar
+  affiliation: Walter and Eliza Hall Institute of Medical Research (WEHI)
+  role: Biomage Analyst - Bioimage Anlaysis Core
+  photo: /assets/images/profiles/pradeep.jpg
+  scholar: https://scholar.google.com/citations?user=knnxOSUAAAAJ&hl=en
+  website: https://findaresearcher.wehi.edu.au/rajasekhar.p/
+  bsky: https://bsky.app/profile/pradeepr.bsky.social
+  interests:
+   - Bioimage Analysis
+   - Application of AI in image analysis
+   - HPC utilisation for image processing
+   - Multimodal data analysis
+  specialities:
+    - Python
+    - Fiji/Imaris/CellProfiler/QuPath
+  
+  bio: >
+    Pradeep is  a bioimage analyst at WEHI. He has a background in engineering and a PhD in Drug Discovery Biology (2017). Pradeep is a lead developer of two open-source software tools: napari-lattice and Gut Analysis Toolbox.  He loves working across disciplines, particularly multimodal datasets. It has all come to the point where he is getting equally comfortable working with large tables or images!! :)
