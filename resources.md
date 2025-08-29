@@ -21,6 +21,15 @@ Here are some useful tools and references developed by our members:
 ## Publications & Guidelines
 - **Cecelia: a multifunctional image analysis toolbox for decoding spatial cellular interactions and behaviour** [Nature Communications](https://www.nature.com/articles/s41467-025-57193-y) 
 
+# Other Resources
+ 
+Presented here is a list of links to things that have come up in our monthly meetings 
+
+## September Meeting 
+- **EPFLx: Image Processing and Analysis for Life Scientists** <BR>A self guided, online image anlaysis curriculum from EPFL. [Website](https://www.edx.org/learn/image-analysis/ecole-polytechnique-federale-de-lausanne-image-processing-and-analysis-for-life-scientists)
+- **CoLoc** <BR> A collaborative board game to teach co-localization analysis.[github](https://github.com/BIOP/coLoc)
+-**Certificate in Small-Group Teaching (CSGT)** <BR> Something to consider for new trainers - currently only open to Unimelb staff and graduates.[webite](https://melbourne-cshe.unimelb.edu.au/pd/teaching-learning-and-assessment/certificate-in-small-group-teaching)
+
 
 
 If you have a resource to share, [let us know](/contact/)! 🚀
