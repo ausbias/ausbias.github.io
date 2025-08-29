@@ -112,13 +112,13 @@
     Pradeep is  a bioimage analyst at WEHI. He has a background in engineering and a PhD in Drug Discovery Biology (2017). Pradeep is a lead developer of two open-source software tools: napari-lattice and Gut Analysis Toolbox.  He loves working across disciplines, particularly multimodal datasets. It has all come to the point where he is getting equally comfortable working with large tables or images!! :)
 
   
-username: kalyan-shobhana
-name: Kalyan Shobhana
-affiliation: Biological Optical Microscopy Platform - University of Melbourne
-photo: /assets/images/profiles/kalyan.png
-role: Platform Support Officer
-website: https://microscopy.unimelb.edu.au/om
-interests:
+- username: kalyan-shobhana
+  name: Kalyan Shobhana
+  affiliation: Biological Optical Microscopy Platform - University of Melbourne
+  photo: /assets/images/profiles/kalyan.png
+  role: Platform Support Officer
+  website: https://microscopy.unimelb.edu.au/om
+  interests:
    - Automated Microscopy
    - Bioimage analysis
    - Science communication
@@ -126,5 +126,5 @@ interests:
     - Imaging Automation 
     -  Slide scanning
     -  QuPath (Basic)
- bio: > 
-    Kalyan Shobhana holds a Master’s degree in Biotechnology from The University of Melbourne, with an academic foundation in biomedical science and optical microscopy. Her expertise centres on confocal microscopy and slide scanning technologies. In her current role as a Platform Support Officer at the Biological Optical Microscopy Platform, Kalyan provides comprehensive training and research support for confocal microscopes and slide scanners along with image analysis inductions. She is passionate about enabling researchers to harness advanced imaging tools for impactful scientific discovery.
+   bio: > 
+     Kalyan Shobhana holds a Master’s degree in Biotechnology from The University of Melbourne, with an academic foundation in biomedical science and optical microscopy. Her expertise centres on confocal microscopy and slide scanning technologies. In her current role as a Platform Support Officer at the Biological Optical Microscopy Platform, Kalyan provides comprehensive training and research support for confocal microscopes and slide scanners along with image analysis inductions. She is passionate about enabling researchers to harness advanced imaging tools for impactful scientific discovery.
