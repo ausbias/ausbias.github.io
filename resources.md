@@ -24,11 +24,12 @@ Here are some useful tools and references developed by our members:
 # Other Resources
  
 Presented here is a list of links to things that have come up in our monthly meetings 
+<hr class="section-divider">
 
 ## September Meeting 
 - **EPFLx: Image Processing and Analysis for Life Scientists** <BR>A self guided, online image anlaysis curriculum from EPFL. [Website](https://www.edx.org/learn/image-analysis/ecole-polytechnique-federale-de-lausanne-image-processing-and-analysis-for-life-scientists)
 - **CoLoc** <BR> A collaborative board game to teach co-localization analysis.[github](https://github.com/BIOP/coLoc)
--**Certificate in Small-Group Teaching (CSGT)** <BR> Something to consider for new trainers - currently only open to Unimelb staff and graduates.[webite](https://melbourne-cshe.unimelb.edu.au/pd/teaching-learning-and-assessment/certificate-in-small-group-teaching)
+- **Certificate in Small-Group Teaching (CSGT)** <BR> Something to consider for new trainers - currently only open to Unimelb staff and graduates.[webite](https://melbourne-cshe.unimelb.edu.au/pd/teaching-learning-and-assessment/certificate-in-small-group-teaching)
 
 
 
