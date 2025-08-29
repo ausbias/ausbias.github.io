@@ -21,6 +21,8 @@ Here are some useful tools and references developed by our members:
 ## Publications & Guidelines
 - **Cecelia: a multifunctional image analysis toolbox for decoding spatial cellular interactions and behaviour** [Nature Communications](https://www.nature.com/articles/s41467-025-57193-y) 
 
+<hr class="section-divider">
+
 # Other Resources
  
 Presented here is a list of links to things that have come up in our monthly meetings 
