@@ -22,16 +22,16 @@ With this survey, we hope to build a picture of how image analysis in Australia 
  - How researchers are accessing these tools, and how supported they are
  - Gaps in training and support. 
 
- ### Expected Outcomes
+### Expected Outcomes
 
  We obviously can't promise to solve every problem immediately, but the results of this survey will guide our future direction as a society - and how we interface with the global image analysis community from our little corner of the globe. We will use it to put our resoures - such as they are - into areas they're most needed. Whether it's specific software workshops, larger image anlaysis courses, seminars, publications, youtube videos - the possibilities are only limited by the information we receive!
 
- ### Have your say!
+### Have your say!
  The survey itself should only take 5-10 minutes, and you can remain completely anonymous. You can optionally leave your email at the end of the survey if you would like to be contactable regarding your responses though. We want to hear from all microscopy users, from lab heads to undergraduate students, from microscopy experts to those who only just learned which end of the eyepieces to look into. The more responses the more powerful the survey!
 
 Please feel free to share the survey link with your colleagues:
 
 ### [AusBIAS Micrscopy Image Analysis Survey](https://ausbias.org/survey-2025/)
 
- #### Thanks!
+#### Thanks!
  The Australian Bioimage Analysts' Society (AusBIAS) connects researchers, facility staff, and data scientists who use and develop bioimage analysis tools. We aim to promote collaboration, training, and recognition for image analysis as a key part of modern microscopy.
