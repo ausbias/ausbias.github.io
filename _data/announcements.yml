@@ -1,8 +1,8 @@
-- message: "Registrations open for the GloBIAS 2025 Now Open!"
-  url: "https://www.globias.org/activities/bioimage-analysis-conference-2025-in-kobe"
-
 - message: "Join our Google Group to stay updated."
   url: "https://groups.google.com/g/ausbias"
 
 - message: "Check out Ishrat Zaman's (one of our Members) PyCon AU 2025 talk"
   url: "https://www.youtube.com/watch?v=ccLnpjCD5k4"
+
+- message: "Have your say! Fill in the AusBIAS 2025 Survey"
+  url:  "https://ausbias.org/survey-2025/"
