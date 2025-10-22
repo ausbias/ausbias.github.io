@@ -52,7 +52,8 @@
   time: 13:00 (AEST)
   speakers: 
       - name: "Michael McKay"
-  discussion: "TBC"
+        url: "/members/michael-mckay/"
+  discussion: "Spatial Proteomics Image Analysis at WEHI"
   
 
 - date: 2025-11-28
