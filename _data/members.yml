@@ -147,3 +147,25 @@
     - HPC
   bio: > 
     Michael Mckay is an Image Analyst in the Bioimage Analysis Core (BAC) of the Walter and Eliza Hall Institute of Medical Research (WEHI). His primary focus is on spatial proteomics, where he helps research scientists turn complex, multiplex imaging data into meaningful biological insights, particularly in the context of cancer and immune-related diseases. He works extensively with Python for machine learning, deep learning, and image processing, and integrates other programming languages as needed for analysis. He also uses tools like QuPath and Nextflow, where he develops and maintains pipelines for multiplex image analysis
+
+- username: ishrat-zaman
+  name: Ishrat Zaman
+  affiliation: Walter and Eliza Hall Institute of Medical Research (WEHI)
+  role: Image Analyst - Bioimage Analysis Core
+  photo: /assets/images/profiles/ishrat.jpg
+  scholar: https://scholar.google.com/citations?user=a8F5m2QAAAAJ&hl=en
+  website: https://www.wehi.edu.au/collaborative-centre/centre-for-dynamic-imaging/bioimage-analysis-core/
+  bsky: https://bsky.app/profile/ishratz25.bsky.social
+  interests:
+   - Bioimage Analysis
+   - Neuroinformatics 
+   - Spatial transcriptomics
+   - HPC utilisation for image processing
+   - Machine learning-based cell segmentation
+  specialities:
+    - Python
+    - HPC processing
+    - Fiji
+    - QuPath
+  bio: >
+    Ishrat Zaman is a bioimage analyst in the Bioimage Analysis Core (BAC) at WEHI. With a background in both computational biology and wet-lab research, she collaborates with scientists across disciplines to extract meaningful insights from complex microscopy data. She has worked extensively with imaging-based spatial transcriptomics datasets from diverse tissue types, as well as whole-organ lightsheet datasets, with a particular focus on whole-brain imaging. Ishrat is passionate about neuroinformatics as well as bridging the gap between wet-lab experimentation and computational analysis, developing tailored analysis tools and reproducible pipelines that enable researchers to address complex biological questions!
