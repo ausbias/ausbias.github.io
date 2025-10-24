@@ -37,6 +37,12 @@ Presented here is a list of links to things that have come up in our monthly mee
 - **CoLoc** <BR> A collaborative board game to teach co-localization analysis. [github](https://github.com/BIOP/coLoc)
 - **Certificate in Small-Group Teaching (CSGT)** <BR> Something to consider for new trainers - currently only open to Unimelb staff and graduates. [webite](https://melbourne-cshe.unimelb.edu.au/pd/teaching-learning-and-assessment/certificate-in-small-group-teaching)
 
+## October Meeting
+- **Nextflow**<BR>Pipeline manager for "simpler" HPC processing and parallelisation [Website](https://www.nextflow.io/docs/latest/overview.html)
+- **SODA-Hub**<BR>Spatial Omics Data Analytics Hub at WEHI [Website](https://wehi-soda-hub.github.io/)
+- **SOPA Github Repo**<BR>Spatial Omics Pipeline and Analysis [github](https://github.com/gustaveroussy/sopa)
+- **TabPFN**<BR>Foundation model for Tabular Data [github](https://github.com/PriorLabs/TabPFN)
 
 
-If you have a resource to share, [let us know](/contact/)! 🚀
+
+If you have a resource to share, [let us know](/contact/)! 
