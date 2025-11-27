@@ -1,0 +1,110 @@
+- date: 2025-03-11
+  time: 12:00 Midday (AEST)
+  host: 
+    - name: "Lachlan Whitehead"
+    - url: "/members/lachlan-whitehead/"
+  speakers:
+    - name: "Pamela Young"
+      url: "/members/pamela-young/"
+  discussion: "A review of ***The crucial role of bioimage analysts in scientific research and publication*** by Cimini et al. "
+
+- date: 2025-04-08
+  time: 12:00 Midday (AEST)
+  host: 
+    - name: "Lachlan Whitehead"
+    - url: "/members/lachlan-whitehead/"
+  speakers:
+    - name: "Cam Nowell"
+  discussion: "A review of projects, tools, and resources in a microscopy core facility"
+
+- date: 2025-05-16
+  time: 11:00 (AEST)
+  host: 
+    - name: "Lachlan Whitehead"
+    - url: "/members/lachlan-whitehead/"
+  speakers:
+    - name: "Pradeep Rajasekhar"
+      url: "/members/pradeep-rajasekhar/"
+  discussion: "An overview of deepImageJ and BIoimageIO"
+
+- date: 2025-06-27
+  time: 11:00 (AEST)
+  host: 
+    - name: "Lachlan Whitehead"
+    - url: "/members/lachlan-whitehead/"
+  speakers: 
+   - name: "Open Discussion"
+  discussion: "Links with LMA, updates to schedule, future workshops"
+
+
+- date: 2025-07-25
+  time: 13:00 (AEST)
+  host: 
+    - name: "Lachlan Whitehead"
+    - url: "/members/lachlan-whitehead/"
+  speakers:
+    - name: "Ishrat Zaman"
+      url: "/members/ishrat-zaman/"
+  discussion: "Big Brains, Small Targets: Whole-Brain Image Analysis with Python & Its Challenges"
+
+
+- date: 2025-08-29
+  time: 13:00 (AEST)
+  host: 
+    - name: "Lachlan Whitehead"
+    - url: "/members/lachlan-whitehead/"
+  speakers:   
+    - name: Kalyan Shobhana
+      url: "/members/kalyan-shobhana/"
+  discussion: "A review of ZIDAS - Switzerland's Image & Data Analysis School"
+
+
+- date: 2025-09-25
+  time: 13:00 (AEST)
+  host: 
+    - name: "Lachlan Whitehead"
+    - url: "/members/lachlan-whitehead/"
+  speakers: 
+      - name: "Ellie Cho"
+        url: "/members/ellie-cho/"
+  discussion: "Preview of Ellie's presentation at Globias in October. Discussion of proposal from Microscopy Australia"
+
+
+- date: 2025-10-24
+  time: 13:00 (AEST)
+  host: 
+    - name: "Lachlan Whitehead"
+    - url: "/members/lachlan-whitehead/"
+  speakers: 
+      - name: "Michael McKay"
+        url: "/members/michael-mckay/"
+  discussion: "Spatial Proteomics Image Analysis at WEHI"
+  
+
+- date: 2025-11-28
+  time: 13:00 (AEST)
+  host: 
+    - name: "Lachlan Whitehead"
+    - url: "/members/lachlan-whitehead/"
+  speakers: 
+    - name: "Lachlan Whitehead"
+      url: "/members/lachlan-whitehead"
+    - name: "Nic Condon"
+      url: "/members/nicholas-condon/"
+    - name: "Ellie Cho"
+      url: "/members/ellie-cho/"
+  discussion: "GloBIAS Wrap-Up"
+  
+
+- date: 2025-12-19
+  time: 13:00 (AEST)
+  host: 
+    - name: "Lachlan Whitehead"
+    - url: "/members/lachlan-whitehead/"
+  speakers: 
+    - name: "Santa"
+      url: "https://en.wikipedia.org/wiki/Santa_Claus"
+  discussion: "AusBIAS Christmas Party and Wrap-Up"
+  
+
+
