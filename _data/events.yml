@@ -95,3 +95,10 @@
   location: "WEHI - online via SLIDO"
   description: "The workshops will include presentations on current projects by researchers utilising AI for multiomics and imaging data, drug discovery and protein design. The focus of initial workshops will be \"narrow AI\" and machine learning (ML). Later workshops still being planned may include tutorials or cover use of general AI, such as Large Language and agentic models, in other areas of work and life."
   logo: "/assets/images/wehi_logo.jpg"
+
+- title: "5th Light Microscopy Australia National Symposium"
+  date: "2026-02-02"
+  location: "University of Sydney"
+  url: "https://www.lmameeting2026.com.au/"
+  description: "The LMA2026 National Symposium will bring together the Australian microscopy community to discuss the latest advancements in microscopy and its research applications. This event presents an incredible opportunity for research academics, facility personnel, and industry professionals to exchange knowledge, enhance their skills, and foster new collaborations that drive groundbreaking research."
+  logo: "/assets/images/lma_logo.jpg"
