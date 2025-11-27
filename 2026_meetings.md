@@ -26,10 +26,15 @@ permalink: /2026-meetings/
             {% endif %}</td>
       <td> {% for h in meeting.host %}
                 {% if h.url %}
-                <a href="{{ h.url }}">{{ h.name }}</a>{% unless forloop.last %}, {% endunless %}
+                  {% if h.url == "volunteer" %} 
+                    {% include volunteer-email.html %} 
+                  {% else %}
+                    <a href="{{ h.url }}">{{ h.name }}</a>
+                  {% endif %}
                 {% else %}
-                {{ h.name }}{% unless forloop.last %}, {% endunless %}
+                  {{ h.name }}
                 {% endif %}
+                {% unless forloop.last %}, {% endunless %}
             {% endfor %}
       </td>
       <td>

@@ -12,7 +12,7 @@
   time: 13:00 (AEST)
   host: 
     - name: "Volunteer!"
-      url: {% include email.html %}
+      url: "volunteer"
   speakers:
     - name: "Cam Nowell"
   discussion: "A review of projects, tools, and resources in a microscopy core facility"
