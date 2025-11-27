@@ -5,7 +5,7 @@
       url: "https://forms.gle/6Ke4HFBPBSAshWGy7"
   speakers:
     - name: "Volunteer or nominate via our contact form"
-      url: "/contact/"
+      url: "/contact/#contact-form"
   discussion: 
 
 - date: 2026-02-27
