@@ -11,8 +11,8 @@
 - date: 2026-02-27
   time: 13:00 (AEST)
   host: 
-    - name: "TBD"
-      url: "/members/lachlan-whitehead/"
+    - name: "Volunteer!"
+      url: {% include email.html %}
   speakers:
     - name: "Cam Nowell"
   discussion: "A review of projects, tools, and resources in a microscopy core facility"
