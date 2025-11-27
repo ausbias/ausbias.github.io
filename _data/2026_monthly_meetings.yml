@@ -2,7 +2,7 @@
   time: 12:00 Midday (AEST)
   host: 
     - name: "Lachlan Whitehead"
-    - url: "/members/lachlan-whitehead/"
+      url: "/members/lachlan-whitehead/"
   speakers:
     - name: "Pamela Young"
       url: "/members/pamela-young/"
@@ -12,7 +12,7 @@
   time: 12:00 Midday (AEST)
   host: 
     - name: "Lachlan Whitehead"
-    - url: "/members/lachlan-whitehead/"
+      url: "/members/lachlan-whitehead/"
   speakers:
     - name: "Cam Nowell"
   discussion: "A review of projects, tools, and resources in a microscopy core facility"
@@ -21,7 +21,7 @@
   time: 11:00 (AEST)
   host: 
     - name: "Lachlan Whitehead"
-    - url: "/members/lachlan-whitehead/"
+      url: "/members/lachlan-whitehead/"
   speakers:
     - name: "Pradeep Rajasekhar"
       url: "/members/pradeep-rajasekhar/"
@@ -31,7 +31,7 @@
   time: 11:00 (AEST)
   host: 
     - name: "Lachlan Whitehead"
-    - url: "/members/lachlan-whitehead/"
+      url: "/members/lachlan-whitehead/"
   speakers: 
    - name: "Open Discussion"
   discussion: "Links with LMA, updates to schedule, future workshops"
@@ -41,7 +41,7 @@
   time: 13:00 (AEST)
   host: 
     - name: "Lachlan Whitehead"
-    - url: "/members/lachlan-whitehead/"
+      url: "/members/lachlan-whitehead/"
   speakers:
     - name: "Ishrat Zaman"
       url: "/members/ishrat-zaman/"
@@ -52,7 +52,7 @@
   time: 13:00 (AEST)
   host: 
     - name: "Lachlan Whitehead"
-    - url: "/members/lachlan-whitehead/"
+      url: "/members/lachlan-whitehead/"
   speakers:   
     - name: Kalyan Shobhana
       url: "/members/kalyan-shobhana/"
@@ -63,7 +63,7 @@
   time: 13:00 (AEST)
   host: 
     - name: "Lachlan Whitehead"
-    - url: "/members/lachlan-whitehead/"
+      url: "/members/lachlan-whitehead/"
   speakers: 
       - name: "Ellie Cho"
         url: "/members/ellie-cho/"
@@ -74,7 +74,7 @@
   time: 13:00 (AEST)
   host: 
     - name: "Lachlan Whitehead"
-    - url: "/members/lachlan-whitehead/"
+      url: "/members/lachlan-whitehead/"
   speakers: 
       - name: "Michael McKay"
         url: "/members/michael-mckay/"
@@ -85,7 +85,7 @@
   time: 13:00 (AEST)
   host: 
     - name: "Lachlan Whitehead"
-    - url: "/members/lachlan-whitehead/"
+      url: "/members/lachlan-whitehead/"
   speakers: 
     - name: "Lachlan Whitehead"
       url: "/members/lachlan-whitehead"
@@ -100,11 +100,8 @@
   time: 13:00 (AEST)
   host: 
     - name: "Lachlan Whitehead"
-    - url: "/members/lachlan-whitehead/"
+      url: "/members/lachlan-whitehead/"
   speakers: 
     - name: "Santa"
       url: "https://en.wikipedia.org/wiki/Santa_Claus"
   discussion: "AusBIAS Christmas Party and Wrap-Up"
-  
-
-

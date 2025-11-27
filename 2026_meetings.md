@@ -6,12 +6,13 @@ permalink: /2026-meetings/
 
 <h1>Monthly Meetings</h1>
 
-<p>Below is a summary of upcoming and past monthly meetings. If you would like to nominate a speaker or suggest a discussion topic, please <a href="/contact/">contact us</a>. Zoom link to the meeting will be advertised on the google group mailing list or via the LMA email newsletter. </p>
+<p>Below is a summary of upcoming and pasgitt monthly meetings. If you would like to nominate a speaker or suggest a discussion topic, please <a href="/contact/">contact us</a>. Zoom link to the meeting will be advertised on the google group mailing list or via the LMA email newsletter. </p>
 
 <table class="meeting-table">
   <thead>
     <tr>
       <th>Date</th>
+      <th>Host</th>
       <th>Speaker(s)</th>
       <th>Discussion Topic(s)</th>
     </tr>
