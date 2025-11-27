@@ -14,7 +14,8 @@
     - name: "Volunteer!"
       url: "https://forms.gle/6Ke4HFBPBSAshWGy7"
   speakers:
-    - name: 
+    - name: "Volunteer or nominate via our contact form"
+      url: "/contact/#contact-form"
   discussion: 
 
 - date: 2026-03-27
@@ -23,8 +24,8 @@
     - name: "Volunteer!"
       url: "https://forms.gle/6Ke4HFBPBSAshWGy7"
   speakers:
-    - name: 
-      url: 
+    - name: "Volunteer or nominate via our contact form"
+      url: "/contact/#contact-form"
   discussion: 
 
 - date: 2026-04-24
@@ -32,8 +33,8 @@
   host: 
     - name: "Volunteer!"
       url: "https://forms.gle/6Ke4HFBPBSAshWGy7"
-  speakers: 
-   - name: 
+    - name: "Volunteer or nominate via our contact form"
+      url: "/contact/#contact-form"
   discussion: 
 
 
@@ -43,8 +44,8 @@
     - name: "Volunteer!"
       url: "https://forms.gle/6Ke4HFBPBSAshWGy7"
   speakers:
-    - name: 
-      url:
+    - name: "Volunteer or nominate via our contact form"
+      url: "/contact/#contact-form"
   discussion: 
 
 - date: 2026-06-26
@@ -53,8 +54,8 @@
     - name: "Volunteer!"
       url: "https://forms.gle/6Ke4HFBPBSAshWGy7"
   speakers:   
-    - name: 
-      url: 
+    - name: "Volunteer or nominate via our contact form"
+      url: "/contact/#contact-form"
   discussion: 
 
 - date: 2026-07-31
@@ -63,8 +64,8 @@
     - name: "Volunteer!"
       url: "https://forms.gle/6Ke4HFBPBSAshWGy7"
   speakers: 
-      - name: 
-        url: 
+    - name: "Volunteer or nominate via our contact form"
+      url: "/contact/#contact-form"
   discussion:
 
 - date: 2026-08-28
@@ -73,8 +74,8 @@
     - name: "Volunteer!"
       url: "https://forms.gle/6Ke4HFBPBSAshWGy7"
   speakers: 
-      - name:
-        url: 
+    - name: "Volunteer or nominate via our contact form"
+      url: "/contact/#contact-form"
   discussion:
   
 - date: 2026-09-25
@@ -83,10 +84,8 @@
     - name: "Volunteer!"
       url: "https://forms.gle/6Ke4HFBPBSAshWGy7"
   speakers: 
-    - name:
-      url: 
-    - name:
-      url: 
+    - name: "Volunteer or nominate via our contact form"
+      url: "/contact/#contact-form"
   discussion: 
 
 - date: 2026-10-30
@@ -95,8 +94,8 @@
     - name: "Volunteer!"
       url: "https://forms.gle/6Ke4HFBPBSAshWGy7"
   speakers: 
-    - name: 
-      url: 
+    - name: "Volunteer or nominate via our contact form"
+      url: "/contact/#contact-form"
   discussion:
 
 - date: 2026-11-27
@@ -105,8 +104,8 @@
     - name: "Volunteer!"
       url: "https://forms.gle/6Ke4HFBPBSAshWGy7"
   speakers: 
-    - name: 
-      url: 
+    - name: "Volunteer or nominate via our contact form"
+      url: "/contact/#contact-form"
   discussion: 
 
 - date: 2026-12-18
@@ -115,6 +114,6 @@
     - name: "Volunteer!"
       url: "https://forms.gle/6Ke4HFBPBSAshWGy7"
   speakers: 
-    - name: 
-      url: 
+    - name: "Volunteer or nominate via our contact form"
+      url: "/contact/#contact-form"
   discussion: 
