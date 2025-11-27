@@ -20,4 +20,6 @@ Stay connected with us through our online communities:
 ## Events & Meetings
 We regularly host workshops, webinars, and community discussions. Check our [Events](/events/) page for upcoming activities.
 
+## Contact Form
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdloiiJ6sH8V4iy_i-JzCOPSpCKsUGriHcFKgIKo-sECfSeYQ/viewform?embedded=true" width="640" height="930" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 
