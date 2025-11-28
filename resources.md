@@ -43,6 +43,10 @@ Presented here is a list of links to things that have come up in our monthly mee
 - **SOPA Github Repo**<BR>Spatial Omics Pipeline and Analysis [github](https://github.com/gustaveroussy/sopa)
 - **TabPFN**<BR>Foundation model for Tabular Data [github](https://github.com/PriorLabs/TabPFN)
 
+## November Meeting 
+- **Sticker Warehouse**<BR>Not an advertisement, just a personal endoresement - they produced the AusBIAS stickers. [Website](https://www.stickerwarehouse.com.au/)
+- **GloBIAS activities**<BR>What GloBIAS is doing and how to become a part of it. [Link](https://www.globias.org/activities)
+- **AMMS Knowledge Exchange**<BR>Pottential local travel funding sources for members [Knowledge Exchange Program](https://microscopy.org.au/microscopy-knowledge-exchange/) and [Visits](https://micro.org.au/news/microscopy-knowledge-exchange-visits/)
 
 
 If you have a resource to share, [let us know](/contact/)! 
