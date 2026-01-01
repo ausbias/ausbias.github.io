@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Monthly Meeting
-permalink: /monthly-meeting/
+title: 2025 Monthly Meetings
+permalink: /2025-meetings/
 ---
 
 <h1>Monthly Meetings</h1>
