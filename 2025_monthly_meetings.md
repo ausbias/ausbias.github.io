@@ -1,7 +1,7 @@
 ---
 layout: default
-title: 2026 Monthly Meeting
-permalink: /2026-meetings/
+title: Monthly Meeting
+permalink: /monthly-meeting/
 ---
 
 <h1>Monthly Meetings</h1>
@@ -12,31 +12,17 @@ permalink: /2026-meetings/
   <thead>
     <tr>
       <th>Date</th>
-      <th>Host</th>
       <th>Speaker(s)</th>
       <th>Discussion Topic(s)</th>
     </tr>
   </thead>
   <tbody>
-      {% for meeting in site.data.2026_monthly_meetings %}
+      {% for meeting in site.data.2025_monthly_meetings %}
       <tr>
       <td>  {{ meeting.date | date: "%B %d, %Y" }}
             {% if meeting.time %}
              <br><small>{{ meeting.time }}</small>
             {% endif %}</td>
-      <td> {% for h in meeting.host %}
-                {% if h.url %}
-                  {% if h.url == "volunteer" %} 
-                    {% include volunteer-email.html %} 
-                  {% else %}
-                    <a href="{{ h.url }}">{{ h.name }}</a>
-                  {% endif %}
-                {% else %}
-                  {{ h.name }}
-                {% endif %}
-                {% unless forloop.last %}, {% endunless %}
-            {% endfor %}
-      </td>
       <td>
             {% for sp in meeting.speakers %}
                 {% if sp.url %}
@@ -51,4 +37,6 @@ permalink: /2026-meetings/
     {% endfor %}
   </tbody>
 </table>
+
+
 
