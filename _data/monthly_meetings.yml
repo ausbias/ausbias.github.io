@@ -1,11 +1,11 @@
 - date: 2026-01-30
   time: 13:00 (AEST)
   host: 
-    - name: "Lachlan Whitehead| 
+    - name: "Lachlan Whitehead" 
       url: "/members/lachlan-whitehead"
   speakers:
     - name: "To be confirmed"
-      url: ""
+      #url: ""
   discussion: 
 
 - date: 2026-02-27
