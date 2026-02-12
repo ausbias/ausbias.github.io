@@ -11,8 +11,8 @@
 - date: 2026-02-27
   time: 13:00 (AEST)
   host: 
-    - name: "Volunteer!"
-      url: "https://forms.gle/6Ke4HFBPBSAshWGy7"
+    - name: "Samantha Warren"
+      url: "https://www.monash.edu/researchinfrastructure/mmi/About-us/team/samantha-bio"
   speakers:
     - name: "Cam Nowell"
       url: "https://research.monash.edu/en/persons/cameron-nowell/"
@@ -24,8 +24,8 @@
     - name: "Ellie Cho"
       url: "/members/ellie-cho"
   speakers:
-    - name: "To be confirmed"
-      url: ""
+    - name: "Nicholas Condon* (TBC)"
+      url: "members/nicholas-condon"
   discussion: 
 
 - date: 2026-04-24
