@@ -36,7 +36,7 @@ Welcome people to the meeting, if there's any admin discussion or anything it pr
 ### Introduce the speaker
 Or let them introduce themselves. 
 
-### Presntation
+### Presentation
 Entirely up to the presenter how they'd like to run this part. If they want to give a straight presentation that's fine, if they want interactivity even better. They can do almost anything - but keep an eye on the time or if they go off the rails.
 
 #### Take questions
