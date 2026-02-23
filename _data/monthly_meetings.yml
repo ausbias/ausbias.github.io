@@ -21,8 +21,8 @@
 - date: 2026-03-27
   time: 13:00 (AEST)
   host: 
-    - name: "Ellie Cho"
-      url: "/members/ellie-cho"
+    - name: "Volunteer!"
+      url: "https://forms.gle/6Ke4HFBPBSAshWGy7"
   speakers:
     - name: "Nicholas Condon* (TBC)"
       url: "members/nicholas-condon"
@@ -31,12 +31,12 @@
 - date: 2026-04-24
   time: 11:00 (AEST)
   host: 
-    - name: "Volunteer!"
-      url: "https://forms.gle/6Ke4HFBPBSAshWGy7"
+    - name: "Ellie Cho"
+      url: "/members/ellie-cho"
   speakers:
-    - name: "Volunteer or nominate via our contact form"
-      url: "/contact/#contact-form"
-  discussion: 
+    - name: "Cassandra Hoffmann"
+      url: ""
+  discussion: "Quantifying the structural micro-connectome of live neurons in vitro"
 
 
 - date: 2026-05-29
