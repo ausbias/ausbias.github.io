@@ -22,10 +22,10 @@
   time: 13:00 (AEST)
   host: 
     - name: "Pamela Young"
-      url: "members/pamela-young"
+      url: "/members/pamela-young"
   speakers:
     - name: "Nicholas Condon* (TBC)"
-      url: "members/nicholas-condon"
+      url: "/members/nicholas-condon"
   discussion: 
 
 - date: 2026-04-24
