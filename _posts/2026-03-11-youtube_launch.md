@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Smash that like and subscribe button"
-date:   2026-03-12
+date:   2026-03-11
 categories: [news, updates]
 author: lachlan-whitehead
 bsky: "https://bsky.app/profile/drlachie.bsky.social"
