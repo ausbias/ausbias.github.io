@@ -7,8 +7,6 @@ author: lachlan-whitehead
 bsky: "https://bsky.app/profile/drlachie.bsky.social"
 ---
 
-## Smash that like and subscribe button!
-
 ### Ausbias now as a YouTube Channel 
 
 We're excited to announce that **Ausbias is now on YouTube**! 

@@ -16,6 +16,7 @@ There are sometimes issues with using institute email addresses, they can be add
 Stay connected with us through our online communities:
 - **Blusky:** [@AusBIAS.bsky.social](https://bsky.app/profile/ausbias.org) 
 - **GitHub:** [Australian Bioimage Analysts](https://github.com/ausbias)
+- **YouTube:** [AusBIAS Youtube Channel](https://youtube.com/@ausbias)
 
 ## Events & Meetings
 We regularly host workshops, webinars, and community discussions. Check our [Events](/events/) page for upcoming activities.
