@@ -33,8 +33,11 @@ Use whichever statement is preferred by you or your institution. Acknowledge tha
 ### Welcome 
 Welcome people to the meeting, if there's any admin discussion or anything it probably makese sense to do that first. If the following month does not yet have a host then try and get nominations
 
+## Start recording
+With speaker permission the video on YouTube will begin more or less here.
+
 ### Introduce the speaker
-Or let them introduce themselves. ***Start recording (with speaker permission)***. 
+Or let them introduce themselves.  
 
 ### Presentation
 Entirely up to the presenter how they'd like to run this part. If they want to give a straight presentation that's fine, if they want interactivity even better. They can do almost anything - but keep an eye on the time or if they go off the rails.
