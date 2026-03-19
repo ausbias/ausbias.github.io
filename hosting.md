@@ -10,7 +10,7 @@ Thanks for volunteering! Here are some helpful instructions for hosting the AusB
 
 ## Before the meeting
 ### Organising A Speaker
-Try and invite and confirm a speaker as early as possible, not only so they can adequately prepare but also so we can advertise effectively. 
+Try and invite and confirm a speaker as early as possible, not only so they can adequately prepare but also so we can advertise effectively. Ask if they're happy for their presentation to be recorded and posted to the AusBIAS YouTube site. 
 
 ### Create the zoom meeting
 Zoom is by far the preferred meeting interface. If you don't have an institute license, shout out on the google group or contact Lachie to set up the link. Preferably invite AusBIAS members to the meeting via zoom so that it automatically creates a calendar invite (you will be sent the current membership list once you're confirmed as host). But also post on the AusBIAS google group. 
@@ -34,7 +34,7 @@ Use whichever statement is preferred by you or your institution. Acknowledge tha
 Welcome people to the meeting, if there's any admin discussion or anything it probably makese sense to do that first. If the following month does not yet have a host then try and get nominations
 
 ### Introduce the speaker
-Or let them introduce themselves. 
+Or let them introduce themselves. ***Start recording (with speaker permission)***. 
 
 ### Presentation
 Entirely up to the presenter how they'd like to run this part. If they want to give a straight presentation that's fine, if they want interactivity even better. They can do almost anything - but keep an eye on the time or if they go off the rails.
@@ -46,5 +46,8 @@ Try and encourage interaction, ask your own questions and encourage others to do
 Thank the speaker. If time permits feel free to engage in whatever random discussion has come up. Thank everyone for attending, remind them about next months meeting. 
 
 ## After the meeting
-Nothing really. Your job is done. Thanks for hosting!
+If it was recorded, find where zoom has saved the meeting video. If you want to edit it yourself go ahead, otherwise Lachie will provide a dropbox link to upload to and it will be process and posted to the AusBIAS YouTube page in due course. 
+
+Thanks for hosting!
+
 
