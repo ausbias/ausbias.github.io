@@ -169,3 +169,33 @@
     - QuPath
   bio: >
     Ishrat Zaman is a bioimage analyst in the Bioimage Analysis Core (BAC) at WEHI. With a background in both computational biology and wet-lab research, she collaborates with scientists across disciplines to extract meaningful insights from complex microscopy data. She has worked extensively with imaging-based spatial transcriptomics datasets from diverse tissue types, as well as whole-organ lightsheet datasets, with a particular focus on whole-brain imaging. Ishrat is passionate about neuroinformatics as well as bridging the gap between wet-lab experimentation and computational analysis, developing tailored analysis tools and reproducible pipelines that enable researchers to address complex biological questions!
+
+- username: charla-lu-chai
+  name: Charla Lu Chai
+  affiliation: Anatomy & Development Biology Department, Monash Biomedicine Discovery Institute
+  role: PhD student
+  photo: /assets/images/profiles/charla_chai.jpg
+  scholar: https://scholar.google.com/citations?user=AloFvnsAAAAJ&hl=en&oi=ao
+  website: https://github.com/CharlaChai
+  bsky: https://bsky.app/profile/charlachai.bsky.social
+  interests:
+   - Computational pathology
+   - AI for healthcare
+   - Digital pathology
+   - Computer vision
+   - Multimodal learning
+   - Graph neural networks
+   - Biomarker discovery
+   - Colorectal cancer
+   - Spatial biology
+   - Precision oncology.
+  specialities:
+    - Deep learning, machine learning
+    - computer vision
+    - whole-slide image analysis
+    - multiplex immunofluorescence (mIF) image analysis
+    - biomarker discovery
+    - image processing
+    - statistical modelling.
+  bio: >
+    Charla is a computational biologist in developing AI methods to predict relapse in early-stage colorectal cancer and identify clinically relevant biomarkers. Her research integrates whole-slide pathology images, multiplex immunofluorescence imaging, and clinical data using multimodal deep learning approaches. She is particularly interested in translating AI and computer vision techniques into tools that support precision oncology and clinical decision-making.
