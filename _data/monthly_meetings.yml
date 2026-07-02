@@ -72,18 +72,18 @@
 - date: 2026-08-28
   time: 13:00 (AEST)
   host: 
-    - name: "Volunteer!"
-      url: "https://forms.gle/6Ke4HFBPBSAshWGy7"
+    - name: "Lachlan Whitehead"
+      url: "/members/lachlan-whitehead"
   speakers: 
-    - name: "Volunteer or nominate via our contact form"
-      url: "/contact/#contact-form"
-  discussion:
+    - name: "Raeesah Hayatudin"
+      url: "/members/Raeesah Hayatundin"
+  discussion: "Live imaging kidney development"
   
 - date: 2026-09-25
   time: 13:00 (AEST)
   host: 
-    - name: "Volunteer!"
-      url: "https://forms.gle/6Ke4HFBPBSAshWGy7"
+    - name: "Raeesah Hayatudin"
+      url: "/members/Raeesah Hayatundin"
   speakers: 
     - name: "Volunteer or nominate via our contact form"
       url: "/contact/#contact-form"
