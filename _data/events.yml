@@ -109,3 +109,10 @@
   url: "https://ausbias.org/monthly-meeting/"
   description: "Monthly Meeting - Join google group for details"
   logo: "/assets/images/square_logo.png"
+
+- title: "AusBIAS Monthly Zoom Meeting"
+  date: "2026-07-31"
+  location: "Online, Zoom"
+  url: "https://groups.google.com/g/ausbias"
+  description: "Our monthly meeting for July. Join the Google Group for link and details."
+  logo: "/assets/images/banner_logo_T.png"
