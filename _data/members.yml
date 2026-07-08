@@ -199,3 +199,25 @@
     - statistical modelling.
   bio: >
     Charla is a computational biologist in developing AI methods to predict relapse in early-stage colorectal cancer and identify clinically relevant biomarkers. Her research integrates whole-slide pathology images, multiplex immunofluorescence imaging, and clinical data using multimodal deep learning approaches. She is particularly interested in translating AI and computer vision techniques into tools that support precision oncology and clinical decision-making.
+
+
+- username: raeesah-hayatudin
+  name: Raeesah Hayatudin
+  affiliation: Monash Biomedicine Discovery Institute
+  role: PhD student
+  photo: /assets/images/profiles/raeesah.jpg
+  website: https://www.linkedin.com/in/raeesah-hayatudin/
+  interests:
+   - live imaging
+   - tissue explant culture
+   - image segmentation and tracking
+  specialities:
+    - spinning disk confocal microscopy
+    - fluorescence microscopy
+    - napari/CellProfiler (fluent)
+    - Fiji/Imaris (proficient)
+    - Python (writing scripts with others' code)
+  bio: >
+    Raeesah is a final year PhD candidate at Monash University supervised by Dr Alexander Combes and Dr Juan Nunez-Iglesias. Her research is focused on optimising culture techniques, live imaging and volumetric image analysis pipelines within the field of kidney development. Her publications include papers in Frontiers in Molecular Biosciences and npj Metabolic Health and Disease. She has co-supervised Honours and undergraduate students, and currently holds a position as Teaching Associate for Monash University.
+
+
