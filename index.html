@@ -175,15 +175,19 @@ We are a community of researchers, developers, and image analysts dedicated to a
     });
   }
 
-  var today = new Date();
-  today.setHours(0, 0, 0, 0);
+  var now = new Date();
 
+  // Meetings always run 1–2pm, so a meeting is only "next" until its 2pm end time —
+  // after that, roll over to the following month immediately rather than waiting for midnight.
   var nextMeeting = monthlyMeetings
     .map(function (m) {
-      return Object.assign({}, m, { _date: parseLocalDate(m.date) });
+      var date = parseLocalDate(m.date);
+      var end = parseLocalDate(m.date);
+      end.setHours(14, 0, 0, 0);
+      return Object.assign({}, m, { _date: date, _end: end });
     })
-    .sort(function (a, b) { return a._date - b._date; })
-    .find(function (m) { return m._date >= today; });
+    .sort(function (a, b) { return a._end - b._end; })
+    .find(function (m) { return m._end > now; });
 
   if (nextMeeting) {
     document.getElementById('ms-day').textContent = nextMeeting._date.getDate();
