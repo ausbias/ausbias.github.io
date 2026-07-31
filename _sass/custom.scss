@@ -290,3 +290,135 @@ hr.section-divider {
     color: $link-hover-color;
   }
 }
+
+.meeting-spotlight {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.5em;
+  background: linear-gradient(to right, #00114f, #0099cc);
+  color: #fff;
+  border-radius: 16px;
+  padding: 1.8em 2em 1.5em;
+  margin: 2em auto 1em;
+  max-width: 900px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.meeting-spotlight-badge {
+  position: absolute;
+  top: -0.8em;
+  left: 2em;
+  background: #00befd;
+  color: #00114f;
+  font-weight: bold;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.3em 0.9em;
+  border-radius: 999px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.meeting-spotlight-date {
+  flex: 0 0 auto;
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 12px;
+  padding: 0.6em 1em;
+  text-align: center;
+  min-width: 80px;
+}
+
+.ms-day {
+  display: block;
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.ms-month {
+  display: block;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.meeting-spotlight-info {
+  flex: 1 1 300px;
+}
+
+.meeting-spotlight-info h3 {
+  margin: 0 0 0.4em 0;
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.ms-speaker,
+.ms-topic,
+.ms-host {
+  margin: 0.3em 0;
+}
+
+.ms-speaker a,
+.ms-host a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.ms-speaker strong,
+.ms-host strong {
+  color: #cdeeff;
+}
+
+.meeting-spotlight-actions {
+  flex: 0 0 100%;
+  display: flex;
+  gap: 1em;
+  flex-wrap: wrap;
+  margin-top: 0.5em;
+}
+
+.ms-btn {
+  display: inline-block;
+  padding: 0.5em 1.2em;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: transform 0.15s ease, background 0.2s ease;
+}
+
+.ms-btn:hover {
+  transform: translateY(-2px);
+}
+
+.ms-btn-primary {
+  background: #fff;
+  color: #00114f;
+}
+
+.ms-btn-primary:hover {
+  background: #cdeeff;
+  color: #00114f;
+}
+
+.ms-btn-secondary {
+  background: transparent;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+.ms-btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+@media (max-width: 600px) {
+  .meeting-spotlight {
+    padding: 1.6em 1.2em 1.4em;
+  }
+
+  .meeting-spotlight-badge {
+    left: 1.2em;
+  }
+}

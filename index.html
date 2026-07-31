@@ -57,6 +57,46 @@ h1, h2, h3, h4, h5, h6,
 
 We are a community of researchers, developers, and image analysts dedicated to advancing the field of bioimage analysis in Australia. Our mission is to foster collaboration, share knowledge, and support the growth of image analysis expertise across life sciences and biomedical research.
 
+{% assign today_key = 'now' | date: '%Y%m%d' %}
+{% assign sorted_meetings = site.data.monthly_meetings | sort: 'date' %}
+{% assign next_meeting = nil %}
+{% for m in sorted_meetings %}
+  {% assign m_key = m.date | date: '%Y%m%d' %}
+  {% if next_meeting == nil and m_key >= today_key %}
+    {% assign next_meeting = m %}
+  {% endif %}
+{% endfor %}
+
+{% if next_meeting %}
+<div class="meeting-spotlight">
+  <div class="meeting-spotlight-badge">Next Monthly Meeting</div>
+  <div class="meeting-spotlight-date">
+    <span class="ms-day">{{ next_meeting.date | date: "%-d" }}</span>
+    <span class="ms-month">{{ next_meeting.date | date: "%b" }}</span>
+  </div>
+  <div class="meeting-spotlight-info">
+    <h3>{{ next_meeting.date | date: "%A, %B %-d" }}{% if next_meeting.time %} &middot; {{ next_meeting.time }}{% endif %}</h3>
+    {% if next_meeting.speakers %}
+      <p class="ms-speaker"><strong>Speaker{% if next_meeting.speakers.size > 1 %}s{% endif %}:</strong>
+        {% for sp in next_meeting.speakers %}{% if sp.url and sp.url != "" %}<a href="{{ sp.url }}">{{ sp.name }}</a>{% else %}{{ sp.name }}{% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}
+      </p>
+    {% endif %}
+    {% if next_meeting.discussion %}
+      <p class="ms-topic">{{ next_meeting.discussion | markdownify | strip_html | strip_newlines | truncate: 180 }}</p>
+    {% endif %}
+    {% if next_meeting.host %}
+      <p class="ms-host"><strong>Hosted by:</strong>
+        {% for h in next_meeting.host %}{% if h.url and h.url != "" %}<a href="{{ h.url }}">{{ h.name }}</a>{% else %}{{ h.name }}{% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}
+      </p>
+    {% endif %}
+  </div>
+  <div class="meeting-spotlight-actions">
+    <a href="/monthly-meeting/" class="ms-btn ms-btn-primary">Full Schedule</a>
+    <a href="https://groups.google.com/g/ausbias" class="ms-btn ms-btn-secondary" target="_blank">Join via Google Group</a>
+  </div>
+</div>
+{% endif %}
+
 <hr class="section-divider">
 <h3>Latest News and Announcements </h3>
 <div class="wrapper">
