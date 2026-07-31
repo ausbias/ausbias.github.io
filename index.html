@@ -57,45 +57,107 @@ h1, h2, h3, h4, h5, h6,
 
 We are a community of researchers, developers, and image analysts dedicated to advancing the field of bioimage analysis in Australia. Our mission is to foster collaboration, share knowledge, and support the growth of image analysis expertise across life sciences and biomedical research.
 
-{% assign today_key = 'now' | date: '%Y%m%d' %}
-{% assign sorted_meetings = site.data.monthly_meetings | sort: 'date' %}
-{% assign next_meeting = nil %}
-{% for m in sorted_meetings %}
-  {% assign m_key = m.date | date: '%Y%m%d' %}
-  {% if next_meeting == nil and m_key >= today_key %}
-    {% assign next_meeting = m %}
-  {% endif %}
-{% endfor %}
-
-{% if next_meeting %}
-<div class="meeting-spotlight">
+<div id="meeting-spotlight" class="meeting-spotlight" style="display:none;">
   <div class="meeting-spotlight-badge">Next Monthly Meeting</div>
   <div class="meeting-spotlight-date">
-    <span class="ms-day">{{ next_meeting.date | date: "%-d" }}</span>
-    <span class="ms-month">{{ next_meeting.date | date: "%b" }}</span>
+    <span class="ms-day" id="ms-day"></span>
+    <span class="ms-month" id="ms-month"></span>
   </div>
   <div class="meeting-spotlight-info">
-    <h3>{{ next_meeting.date | date: "%A, %B %-d" }}{% if next_meeting.time %} &middot; {{ next_meeting.time }}{% endif %}</h3>
-    {% if next_meeting.speakers %}
-      <p class="ms-speaker"><strong>Speaker{% if next_meeting.speakers.size > 1 %}s{% endif %}:</strong>
-        {% for sp in next_meeting.speakers %}{% if sp.url and sp.url != "" %}<a href="{{ sp.url }}">{{ sp.name }}</a>{% else %}{{ sp.name }}{% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}
-      </p>
-    {% endif %}
-    {% if next_meeting.discussion %}
-      <p class="ms-topic">{{ next_meeting.discussion | markdownify | strip_html | strip_newlines | truncate: 180 }}</p>
-    {% endif %}
-    {% if next_meeting.host %}
-      <p class="ms-host"><strong>Hosted by:</strong>
-        {% for h in next_meeting.host %}{% if h.url and h.url != "" %}<a href="{{ h.url }}">{{ h.name }}</a>{% else %}{{ h.name }}{% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}
-      </p>
-    {% endif %}
+    <h3 id="ms-datetime"></h3>
+    <p class="ms-speaker" id="ms-speaker" style="display:none;"><strong id="ms-speaker-label">Speaker:</strong> <span id="ms-speaker-list"></span></p>
+    <p class="ms-topic" id="ms-topic" style="display:none;"></p>
+    <p class="ms-host" id="ms-host" style="display:none;"><strong>Hosted by:</strong> <span id="ms-host-list"></span></p>
   </div>
   <div class="meeting-spotlight-actions">
     <a href="/monthly-meeting/" class="ms-btn ms-btn-primary">Full Schedule</a>
     <a href="https://groups.google.com/g/ausbias" class="ms-btn ms-btn-secondary" target="_blank">Join via Google Group</a>
   </div>
 </div>
-{% endif %}
+<noscript>
+  <p><a href="/monthly-meeting/">View our monthly meeting schedule</a></p>
+</noscript>
+
+<script>
+(function () {
+  var monthlyMeetings = {{ site.data.monthly_meetings | jsonify }};
+
+  function parseLocalDate(dateStr) {
+    var parts = dateStr.split('-').map(Number);
+    return new Date(parts[0], parts[1] - 1, parts[2]);
+  }
+
+  function stripMarkdown(text) {
+    if (!text) return '';
+    return text
+      .replace(/\[(.*?)\]\((.*?)\)/g, '$1')
+      .replace(/[*_`>#]/g, '')
+      .replace(/^-+\s*/gm, '')
+      .replace(/\r?\n+/g, ' ')
+      .trim();
+  }
+
+  function truncate(text, length) {
+    if (text.length <= length) return text;
+    return text.slice(0, length).trim() + '…';
+  }
+
+  function renderPeopleList(container, people) {
+    container.innerHTML = '';
+    people.forEach(function (person, i) {
+      if (person.url) {
+        var a = document.createElement('a');
+        a.href = person.url;
+        a.textContent = person.name;
+        container.appendChild(a);
+      } else {
+        container.appendChild(document.createTextNode(person.name));
+      }
+      if (i < people.length - 1) {
+        container.appendChild(document.createTextNode(', '));
+      }
+    });
+  }
+
+  var today = new Date();
+  today.setHours(0, 0, 0, 0);
+
+  var nextMeeting = monthlyMeetings
+    .map(function (m) {
+      return Object.assign({}, m, { _date: parseLocalDate(m.date) });
+    })
+    .sort(function (a, b) { return a._date - b._date; })
+    .find(function (m) { return m._date >= today; });
+
+  if (nextMeeting) {
+    document.getElementById('ms-day').textContent = nextMeeting._date.getDate();
+    document.getElementById('ms-month').textContent = nextMeeting._date.toLocaleDateString('en-AU', { month: 'short' });
+
+    var dtText = nextMeeting._date.toLocaleDateString('en-AU', { weekday: 'long', month: 'long', day: 'numeric' });
+    if (nextMeeting.time) dtText += ' · ' + nextMeeting.time;
+    document.getElementById('ms-datetime').textContent = dtText;
+
+    if (nextMeeting.speakers && nextMeeting.speakers.length) {
+      document.getElementById('ms-speaker').style.display = '';
+      document.getElementById('ms-speaker-label').textContent = nextMeeting.speakers.length > 1 ? 'Speakers:' : 'Speaker:';
+      renderPeopleList(document.getElementById('ms-speaker-list'), nextMeeting.speakers);
+    }
+
+    if (nextMeeting.discussion) {
+      var topicEl = document.getElementById('ms-topic');
+      topicEl.style.display = '';
+      topicEl.textContent = truncate(stripMarkdown(nextMeeting.discussion), 180);
+    }
+
+    if (nextMeeting.host && nextMeeting.host.length) {
+      document.getElementById('ms-host').style.display = '';
+      renderPeopleList(document.getElementById('ms-host-list'), nextMeeting.host);
+    }
+
+    document.getElementById('meeting-spotlight').style.display = '';
+  }
+})();
+</script>
 
 <hr class="section-divider">
 <h3>Latest News and Announcements </h3>
