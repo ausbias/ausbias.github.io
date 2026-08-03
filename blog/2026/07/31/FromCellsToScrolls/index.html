@@ -1,0 +1,192 @@
+<p>Over the summer I worked on a Kaggle competition run by the <a href="https://scrollprize.org/">Vesuvius Challenge</a>, using tools designed for cell segmentation on 2000-year-old papyrus. I finished in the top 9%, 113th of 1391 teams. It was a nice opportunity to flex those image analysis skills on a different type of problem.</p>
+
+<p>The Herculaneum scrolls were carbonised by Vesuvius in 79 AD and are far too fragile to unroll, so they get imaged with synchrotron CT instead. Inside each volume is a sheet of papyrus wound around itself hundreds of times (like a swiss roll!). Trace the surface of that sheet and you can flatten it out and read what’s written on it. The competition gave you a cube of CT data and asked for the centre surface of the papyrus.</p>
+
+<h2 id="a-familiar-problem-somewhat">A familiar problem (somewhat)!</h2>
+
+<p>Underneath the archaeology, the task is to find thin, densely packed, self-touching sheets in noisy volumetric data. Two sheets pressed together look like one, and a sheet that is split appears like two. The signal is quite dim, and the geometry is complicated. Anyone who has segmented membranes, traced neurites or reconstructed vasculature from bioimaging data knows what I’m talking about. It reminded me of the Fiji <code class="language-plaintext highlighter-rouge">Straighten</code> <a href="https://imagej.net/plugins/straighten">plugin</a>, where they show a banana for scale (literally!).</p>
+
+<p align="center">
+  <img src="/assets/images/blogposts/20260731/banana.png" alt="Banana for scale" width="80%" />
+</p>
+
+<p>It looked straightforward at first, but you wouldn’t have a $200k prize pool if it was that simple.</p>
+
+<p>So I started where I’d start with any new dataset, using familiar tools like ilastik. Paint a few labels, let the random forest do the rest.</p>
+
+<p align="center">
+  <img src="/assets/images/blogposts/20260731/ilastik.png" alt="Pixel classification in ilastik on a slice of scroll CT" width="85%" />
+</p>
+
+<p>The sheet detection looked fine and contrast didn’t seem to be a problem. The bands are visible to the naked eye, and ilastik got the 3D topology largely right.</p>
+
+<h2 id="the-target-is-not-the-sheet">The target is not the sheet</h2>
+
+<p>Then I looked properly at the ground truth. To be honest it was there all along in the competition intro and on the website :)! You aren’t asked for the papyrus, but for a roughly three-voxel line through the <em>middle</em> of each band, where most of the written surface of that wrap sits. Segmenting the sheet gets you a thick ribbon; the competition wants the precise centre of it.</p>
+
+<p><img src="/assets/images/blogposts/20260731/fig1_centreline_vs_sheet.png" alt="Left: the sheets in the raw CT. Right: the ground truth, a thin line through the middle of each band" /></p>
+
+<p><em>The sheets are the easy part. The target is the thin line down the middle of each one. Note how one of the blue lines goes through a split sheet</em></p>
+
+<p>This again reminded me of how we have to predict the midline of a membrane or the centreline of a vessel, more often than not carried through a stretch where the structure is locally broken. The instruction isn’t “segment the thing” but “infer where the middle of the thing would have been.”</p>
+
+<p><img src="/assets/images/blogposts/20260731/fig2_fragmented_centre.png" alt="Ground truth centre surface fragmenting where the sheet is locally broken" /></p>
+
+<p><em>Where the sheet breaks up, the centre line has to be inferred rather than found. A threshold can’t do this.</em></p>
+
+<h2 id="feeding-the-network-a-better-picture">Feeding the network a better picture</h2>
+
+<p>Nearly every serious team ran <a href="https://github.com/mic-dkfz/nnunet">nnU-Net</a>, a self-configuring segmentation framework and an extremely strong default for volumetric biomedical data. If everyone is running the same architecture, the architecture isn’t where you gain much.</p>
+
+<p>The lever nobody seemed to be pulling was the <em>input</em>: would a feature-rich image beat raw CT? A U-Net learns its own filters, of course. But it learns from labels, which were thin and annotation was sparse as well. Computing features upfront is a traditional idea behind <a href="https://www.ilastik.org/">ilastik</a> and <a href="https://imagej.net/Trainable_Weka_Segmentation">Trainable Weka Segmentation</a>, where you build a stack of filter responses and let the classifier do the work instead of the raw pixels. I just didn’t want to hand-pick the filters!</p>
+
+<p>That’s where WNet3D came in. WNet is two U-Nets back to back as an autoencoder: the first segments, the second reconstructs the original image from that segmentation, and it trains with no labels at all. The 3D version comes from CellSeg3D (Achard et al., eLife 2025), built to segment cells in cleared neural tissue. <strong>Not sheets. Cells.</strong></p>
+
+<p>I used it as a learned feature extractor:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>raw CT (1 channel)  →  WNet3D  →  3 self-supervised channels
+                                        ↓
+             nnU-Net input = raw CT + those 3 channels  (4 channels)
+</code></pre></div></div>
+
+<p><img src="/assets/images/blogposts/20260731/wnet_channels.png" alt="Raw CT slice and the three self-supervised WNet3D output channels" /></p>
+
+<p><em>Top left is the raw CT. The other three are what WNet3D makes of it, having never been shown a label. One channel commits hard to sheet-or-not, another keeps the interior texture, a third picks out boundaries. A feature stack the network chose for itself.</em></p>
+
+<p>Moving it from cells to sheets took a fair bit of CellSeg3D <a href="https://adaptivemotorcontrollab.github.io/CellSeg3D/source/guides/training_wnet.html#parameters">parameter tuning</a>:</p>
+
+<ul>
+  <li>raised the intensity sigma so it stopped chasing CT speckle</li>
+  <li>pushed the reconstruction weight up and the n-cuts weight down, shifting it from “cut this into compact objects” towards “preserve this surface”</li>
+</ul>
+
+<p>I had a second motive for chasing this, which was to see whether the network might pick up the ink. I don’t believe it did, and thinking about it more since, its possible it wouldn’t have been possible with this setup. The N-cuts loss clusters voxels by brightness, and carbon ink on carbonised papyrus has little density contrast, which is the whole reason ink detection is hard in the first place. There’s an irony in the tuning too: raising the intensity sigma to stop it chasing CT speckle is probably what killed any chance, since whatever ink signal exists sits down in that same amplitude band. The two things I wanted were pulling against each other. More training wouldn’t have rescued it either, it would just settle the model further into the solution that ignores ink.</p>
+
+<p>The instinct itself seems fine, though. Self-supervised features on raw scroll CT is roughly what the Vesuvius team are doing for ink detection now, with DINO-style embeddings rather than N-cuts.</p>
+
+<p><img src="/assets/images/blogposts/20260731/wnet_tuning.png" alt="The same CT slice with feature channels from several different WNet3D configurations" /></p>
+
+<p><em>The same slice through several configurations, raw CT on the left. Tuned for cells it breaks the sheets into blobs; tuned for sheets the bands survive as continuous surfaces. Same architecture, same data, no labels. Only the loss weighting changed.</em></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Whether this helped is an important question. One of the submissions I only used nnUNet to train with half of the data using concatenated WNet channels as input and it came within 0.013 of the full-data model. The WNet model had seen all of it anyway and convergence was quicker. Its not too surprising when you think about it as the input is more feature rich!
+</code></pre></div></div>
+
+<h3 id="the-whole-tech-stack">The whole tech stack:</h3>
+
+<ul>
+  <li><strong>ilastik</strong> for the first pass, painting labels and getting a feel for the data</li>
+  <li><strong><a href="https://adaptivemotorcontrollab.github.io/CellSeg3D/welcome.html">CellSeg3D / WNet3D</a></strong> as the self-supervised preprocessor, a napari plugin</li>
+  <li><strong><a href="https://github.com/mic-dkfz/nnunet">nnU-Net</a></strong> (ResEncUNet-XL) as the supervised segmenter</li>
+  <li><strong><a href="https://napari.org/">napari</a></strong> for looking at everything in 3D, constantly</li>
+  <li><strong>scikit-image and scipy</strong> for the postprocessing</li>
+  <li><strong>topometrics</strong>, the organisers’ official scorer, built under WSL</li>
+  <li><strong><a href="https://vast.ai/">vast.ai</a></strong> for GPUs rented by the hour, scaling up as the models got bigger <code class="language-plaintext highlighter-rouge">$$$$</code></li>
+  <li><strong>Dropbox</strong> for moving 25 GB of cubes to whichever machine I’d rented <code class="language-plaintext highlighter-rouge">$</code></li>
+  <li><strong>Gemini Pro</strong> for writing and debugging Python <code class="language-plaintext highlighter-rouge">$$</code></li>
+</ul>
+
+<p>All of that software is free and open. The only thing I paid for was compute (my RTX 3080 wasn’t cutting it), and WNet3D pretraining was the slow part at roughly 22 hours for 100 epochs. Inference still had to fit on the two free T4s Kaggle gives you, whatever I trained on. This took some optimizing!</p>
+
+<h2 id="issues-with-ground-truth">Issues with ground truth</h2>
+
+<p>Kaggle competition discussions mentioned discrepancies like holes in the labels, so I profiled all 747 training volumes by topology: separate pieces, enclosed voids, and tunnels through the sheet (inferred from the Euler characteristic, not counted directly). Papyrus doesn’t have holes in it, so any of those is a defect.</p>
+
+<p>137 of the 747 volumes had at least one tunnel, 17 had a void, and the worst had 53 tunnels. That is 707 tunnels and 83 voids sitting inside labels a model will treat as truth.</p>
+
+<p>Cleaning is not the exciting part, i.e., closing to shut the tunnels, hole filling for the voids, dust removal under 500 voxels, and leaving the ignore label untouched so you don’t quietly turn unlabelled regions into background. It closed 576 of the 707 tunnels and all the voids, with 39 volumes rejected by a sanity check. Branch B of my final submission trained on the result.</p>
+
+<p>The organisers realized this and rebuilt the test set mid-competition, which forced a rescore and a two-week extension. They left the training labels alone, since teams had already built pipelines around them.</p>
+
+<h2 id="what-i-actually-submitted">What I actually submitted</h2>
+
+<p><img src="/assets/images/blogposts/20260731/final_pipeline.png" alt="Flowchart of the final submission: raw CT into two WNet3D plus nnU-Net branches, ensembled and postprocessed" /></p>
+
+<p><em>Branch A used the ground truth as supplied. Branch B used my cleaned version, a boundary-aware loss, and a different WNet checkpoint. The diversity between them was worth more than either branch alone.</em></p>
+
+<p>As far as I can tell, no other team used self-supervised preprocessing. It’s the one genuinely new thing I brought, and it came straight out of working in a different field. The full technical version is in my <a href="https://www.kaggle.com/competitions/vesuvius-challenge-surface-detection/writeups/vesuvius-wnet3d-nnunet">competition writeup</a> on Kaggle.</p>
+
+<p><img src="/assets/images/blogposts/20260731/nnunet_decoder_features_6.png" alt="Six of the 32 channels from the final decoder stage of the trained nnU-Net" /></p>
+
+<p><em>Six of the 32 channels from the last decoder stage of the trained nnU-Net, each scaled on its own, so compare structure rather than brightness. Quite a few of the 32 are dead: the network picked that width from its own dataset fingerprint, not because it needed all of them.</em></p>
+
+<p>The data itself was 806 labelled cubes from six scrolls, mostly 320³ and 8-bit, of which I had labels for 747. Every label had three values: background, centre surface and ignore. Centre surface was 5% of the voxels. Ignore was <strong>56%</strong>, the organisers saying “we’re not confident here, don’t score it” across more than half the annotation. The models trained on it quite happily. It just reiterates how hard annotating data is and its great that nnUNET supports sparse annotated.</p>
+
+<h2 id="the-metric-shaped-every-decision">The metric shaped every decision</h2>
+
+<p>The scoring mattered more than the architecture did, and it wasn’t Dice:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>score = 0.35 × surface Dice     boundary alignment, within a tolerance
+      + 0.35 × VOI              splits and merges between sheets
+      + 0.30 × topological F1   same holes, tunnels and pieces as the truth?
+</code></pre></div></div>
+
+<p>That last term is Betti matching: does your prediction have the same topology as the ground truth, rather than just the same voxels?</p>
+
+<p>On one of my better validation volumes:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>surface Dice   0.98      by overlap, essentially finished
+topological F1 0.53      by topology, halfway
+</code></pre></div></div>
+
+<p>And 0.53 was near my <em>best</em>. Across my 150 validation volumes the median topological score was <strong>0.16</strong>.</p>
+
+<figure>
+  <img src="blog_figure/voi_components_turntable.gif" alt="Rotating 3D view of ground truth papyrus sheets beside the model's prediction, each sheet coloured separately" />
+  <figcaption>Ground truth on the left, prediction on the right, each connected piece in its own colour and the colours matched across the two. Every sheet is found, none split, none merged. But the prediction runs about 12% thick, and that thickening does create spurious tunnels through sheets the ground truth has none in. That is what the 0.53 is measuring.</figcaption>
+</figure>
+
+<p>I only understood this once I rendered the two volumes side by side. The model found every sheet, in the right place, unsplit and unmerged. What it got wrong was thickness, and running thick is not harmless: bridge two neighbouring surfaces by a voxel here and there and you’ve created handles that were never in the papyrus.</p>
+
+<p>I liked how this metric was designed, and it shows why a single overlap metric is often not enough. If you care about connectivity, whether a neurite is continuous or a vessel is one or many, an overlap metric will tell you everything is fine while your model quietly severs it.</p>
+
+<p>Having a metric at all was the real luxury. Most bioimaging work has no ground truth to score against, often because the structure you’re segmenting is the thing nobody has characterised yet. So the honest answer to “how well did that work?” is that you scrolled through a few fields of view and it looked about right. My 0.53 volume would have passed that test easily.</p>
+
+<h2 id="things-i-got-wrong">Things I got wrong</h2>
+
+<p>I didn’t get involved in the community as much as I should have. I wasn’t confident about sharing my thoughts and approaches, and joining a team would have been a great way to learn.</p>
+
+<p>My clever postprocessing lost. I ran hyperparameter optimisation over it and reimplemented pieces of the leading teams’ pipelines. A classic case of overfitting. What made my final submission was hysteresis thresholding, a small closing operation and dust removal, close to the simplest thing I tried.</p>
+
+<p>The team that finished 18th did better than me, and after ensembling six models this was their entire postprocessing:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nf">range</span><span class="p">(</span><span class="mi">7</span><span class="p">):</span>
+    <span class="n">mask</span> <span class="o">=</span> <span class="nf">median_filter</span><span class="p">(</span><span class="n">mask</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span>
+</code></pre></div></div>
+
+<p>Their description: “The post-processing is minimal but very strong.” Two lines of scipy. I use median filters almost every other day and didn’t think to try it.</p>
+
+<h2 id="it-wasnt-the-architecture">It wasn’t the architecture</h2>
+
+<p>I don’t believe new architectures won this competition. The top solutions ran similar backbones, and the gap between first place and the middle of the field came from postprocessing and ensembling. In one case, seven median filters. None of that is unique to scrolls. It’s how most Kaggle competitions go once a strong default architecture exists. Everyone converges on it, and the winning margin comes from the unglamorous parts either side of it.</p>
+
+<h2 id="closer-to-home">Closer to home</h2>
+
+<p>I keep coming back to the point that it isn’t always the model. What I liked here was the evaluation, where we had a curated dataset and a carefully designed metric. That meant I could see what was going wrong and where, and that my score and anyone else’s meant the same thing. Without that I’d have looked at the same volumes, decided they were fine, and never known.</p>
+
+<p>Bioimaging mostly hasn’t had this in 3D. In 2D it has, with models like <a href="https://pubmed.ncbi.nlm.nih.gov/41278937/">SubCell</a> (Gupta et al., 2025) and benchmarks like <a href="https://morgridge.org/research/labs/caicedo/chammi-75/">CHAMMI</a> (Chen et al., NeurIPS 2023). But large 3D collections are rarely available at pretraining scale, so the work that generalises is on single-cell crops. The self-supervised trick I used as a hack is, at proper scale, roughly what SubCell does for a living (really well!). The scroll competition had all of it:</p>
+<ul>
+  <li>a curated 3D benchmark</li>
+  <li>an agreed topological metric</li>
+  <li>and a few hundred people arguing about it in public. 
+None of that was fast or free of course. It took years of annotation work, a $200k prize pool, and the millions of $$$ funding behind both.</li>
+</ul>
+
+<p>The closest we have is the <a href="https://celltrackingchallenge.net/">Cell Tracking Challenge</a>: over a decade of shared 2D+time and 3D+time datasets, and two Nature Methods papers analysing what the field’s methods actually do. It’s why a tracking result means the same thing in two different labs. What it has never had is a few hundred people turning up at once, which is why it was good to see Biohub put cell tracking on Kaggle.</p>
+
+<p>Australian facilities are sitting on the raw material for the 3D version. WEHI’s archive alone is 2 to 3 petabytes of confocal, light-sheet and lattice light-sheet data, and every imaging facility in the country has its own version of the same thing: well acquired, genuinely valuable, and not always AI-ready.</p>
+
+<p>We’ve started on ours. <a href="https://www.wehi.edu.au/project/building-foundation-models-for-3d-microscopy/">Building foundation models for 3D microscopy</a> is about curating that archive, pretraining and benchmarking on it. In the near term that makes the everyday jobs more tractable on large data: segmentation, tracking and feature extraction from a handful of annotations rather than hundreds. The more open question is whether the embeddings encode any biology of their own. Does a drug, a mutation or a disease that alters cells or tissue architecture separate from a control? And if two of them act the same way, do they land together without anyone deciding in advance what to measure?</p>
+
+<p>One institute’s archive isn’t enough to be a benchmark for a field though. What we don’t have is a 3D benchmark that anyone outside the institute that built it can score against. The question is, what would it take to put one in front of the same crowd that just spent three months arguing about papyrus? If you have a well-annotated 3D dataset, or you’d like to help build one, I’m always up for a chat. Find me on <a href="https://www.linkedin.com/in/rajapradeep/">LinkedIN</a>.</p>
+
+<h2 id="go-and-try-this-one">Go and try this one</h2>
+
+<p>That <a href="https://www.kaggle.com/competitions/biohub-cell-tracking-during-development">cell tracking competition</a> ends Sep 2026: light-sheet imaging of zebrafish embryos from the Royer group, tens of thousands of cells to follow through space and time. Their stated goal is transparent, community-driven standards for evaluating cell tracking, which is the same argument pointed at our own data instead of somebody’s scroll.</p>
+
+<p>You don’t need to win. I didn’t, and I learned more in three months of evenings than in about a year of reading papers.</p>
+
+<p>Enter it, publish your notebook and contribute to discussions.</p>
+
+<hr />
+
+<p><em>The competition was <a href="https://www.kaggle.com/competitions/vesuvius-challenge-surface-detection">Vesuvius Challenge: Surface Detection</a> on Kaggle, and my <a href="https://www.kaggle.com/competitions/vesuvius-challenge-surface-detection/writeups/vesuvius-wnet3d-nnunet">technical writeup is here</a>. The live one as of August 2026 is <a href="https://www.kaggle.com/competitions/biohub-cell-tracking-during-development">Biohub: Cell Tracking During Development</a>. The 3D microscopy foundation model project takes students at Honours, Masters and PhD level, and through the Medical Student Research Internship program. Happy to talk to anyone thinking about having a go.</em></p>
