@@ -1,4 +1,77 @@
-<p>Over the summer I worked on a Kaggle competition run by the <a href="https://scrollprize.org/">Vesuvius Challenge</a>, using tools designed for cell segmentation on 2000-year-old papyrus. I finished in the top 9%, 113th of 1391 teams. It was a nice opportunity to flex those image analysis skills on a different type of problem.</p>
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.9.0 -->
+<title>From cell segmentation to ancient scrolls, and back again | Australian Bioimage Analysts’ Society</title>
+<meta name="generator" content="Jekyll v4.3.4" />
+<meta property="og:title" content="From cell segmentation to ancient scrolls, and back again" />
+<meta name="author" content="pradeep-rajasekhar" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Over the summer I worked on a Kaggle competition run by the Vesuvius Challenge, using tools designed for cell segmentation on 2000-year-old papyrus. I finished in the top 9%, 113th of 1391 teams. It was a nice opportunity to flex those image analysis skills on a different type of problem." />
+<meta name="twitter:description" property="og:description" content="Over the summer I worked on a Kaggle competition run by the Vesuvius Challenge, using tools designed for cell segmentation on 2000-year-old papyrus. I finished in the top 9%, 113th of 1391 teams. It was a nice opportunity to flex those image analysis skills on a different type of problem." />
+<link rel="canonical" href="https://ausbias.org/blog/2026/07/31/FromCellsToScrolls/" />
+<meta property="og:url" content="https://ausbias.org/blog/2026/07/31/FromCellsToScrolls/" />
+<meta property="og:site_name" content="Australian Bioimage Analysts’ Society" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2026-07-31T00:00:00+00:00" />
+<meta property="article:modified_time" content="2026-07-31T00:00:00+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="From cell segmentation to ancient scrolls, and back again" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"pradeep-rajasekhar"},"dateModified":"2026-07-31T00:00:00+00:00","datePublished":"2026-07-31T00:00:00+00:00","description":"Over the summer I worked on a Kaggle competition run by the Vesuvius Challenge, using tools designed for cell segmentation on 2000-year-old papyrus. I finished in the top 9%, 113th of 1391 teams. It was a nice opportunity to flex those image analysis skills on a different type of problem.","headline":"From cell segmentation to ancient scrolls, and back again","mainEntityOfPage":{"@type":"WebPage","@id":"https://ausbias.org/blog/2026/07/31/FromCellsToScrolls/"},"url":"https://ausbias.org/blog/2026/07/31/FromCellsToScrolls/"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/main.css"><link type="application/atom+xml" rel="alternate" href="https://ausbias.org/feed.xml" title="Australian Bioimage Analysts&apos; Society" />
+<link href="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/css/lightbox.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/js/lightbox-plus-jquery.min.js"></script>
+ 
+</head>
+<body><header class="site-header">
+  <div class="wrapper">
+    <a class="site-title" href="/">Australian Bioimage Analysts' Society</a>
+    <nav class="site-nav">
+      <ul class="nav">
+        
+          <li><a href="/about/">About</a></li>
+        
+          <li><a href="/events/">Events</a></li>
+        
+          <li><a href="/resources/">Resources</a></li>
+        
+          <li><a href="/contact/">Contact</a></li>
+        
+          <li><a href="/blog/">Blog</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">From cell segmentation to ancient scrolls, and back again</h1>
+    <div class="post-meta">
+      <time class="dt-published" datetime="2026-07-31T00:00:00+00:00" itemprop="datePublished">
+        Jul 31, 2026
+      </time>
+      
+        <div class="post-authors">
+          <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a class="p-author h-card" itemprop="name" href="/members/pradeep-rajasekhar/">
+              Pradeep Rajasekhar
+            </a>
+          </span>
+        </div>
+      
+    </div>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p>Over the summer I worked on a Kaggle competition run by the <a href="https://scrollprize.org/">Vesuvius Challenge</a>, using tools designed for cell segmentation on 2000-year-old papyrus. I finished in the top 9%, 113th of 1391 teams. It was a nice opportunity to flex those image analysis skills on a different type of problem.</p>
 
 <p>The Herculaneum scrolls were carbonised by Vesuvius in 79 AD and are far too fragile to unroll, so they get imaged with synchrotron CT instead. Inside each volume is a sheet of papyrus wound around itself hundreds of times (like a swiss roll!). Trace the surface of that sheet and you can flatten it out and read what’s written on it. The competition gave you a cube of CT data and asked for the centre surface of the papyrus.</p>
 
@@ -190,3 +263,43 @@ None of that was fast or free of course. It took years of annotation work, a $20
 <hr />
 
 <p><em>The competition was <a href="https://www.kaggle.com/competitions/vesuvius-challenge-surface-detection">Vesuvius Challenge: Surface Detection</a> on Kaggle, and my <a href="https://www.kaggle.com/competitions/vesuvius-challenge-surface-detection/writeups/vesuvius-wnet3d-nnunet">technical writeup is here</a>. The live one as of August 2026 is <a href="https://www.kaggle.com/competitions/biohub-cell-tracking-during-development">Biohub: Cell Tracking During Development</a>. The 3D microscopy foundation model project takes students at Honours, Masters and PhD level, and through the Medical Student Research Internship program. Happy to talk to anyone thinking about having a go.</em></p>
+
+  </div><a class="u-url" href="/blog/2026/07/31/FromCellsToScrolls/" hidden></a>
+    <div class="post-meta">
+      <span>Written by 
+        
+          <a href="/members/pradeep-rajasekhar/">Pradeep Rajasekhar</a>
+        
+      </span>• <a href="https://bsky.app/profile/pradeepr.bsky.social" target="_blank">Bluesky</a></div></article>
+
+      </div>
+    </main><!-- <footer class="site-footer h-card"> -->
+  <footer class="h-card"></footer>
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <h2 class="footer-heading">Australian Bioimage Analysts' Society</h2>
+        <a class="bsky-link" href="https://bsky.app/profile/ausbias.org" target="_blank">
+          <img src="/assets/images/bluesky_logo.png" alt="Follow us on Bluesky" style="height: 24px; vertical-align: middle;">
+          <!--<span>Follow us on Bluesky</span>-->
+        </a>
+      </div>
+      <div class="footer-col">
+        <p>The Australian Bioimage Analysts&#39; Society is dedicated to supporting and connecting bioimage analysts across Australia.
+</p>
+      </div>
+    </div>
+
+    <!-- <div class="social-links"><ul class="social-media-list"></ul>
+</div> -->
+
+  </div>
+
+</footer>
+
+</body>
+
+</html>
