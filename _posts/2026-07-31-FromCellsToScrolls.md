@@ -1,8 +1,9 @@
 ---
-layot: post
+layout: post
 title: "From cell segmentation to ancient scrolls, and back again"
 date: 2026-07-31
 author: pradeep-rajasekhar
+categories: [news, updates]
 tags: [segmentation, benchmarks, deep-learning, community]
 summary: >
   Notes from a Kaggle competition on segmenting carbonised papyrus with cell
