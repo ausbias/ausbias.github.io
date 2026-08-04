@@ -13,7 +13,7 @@ Thanks for volunteering! Here are some helpful instructions for hosting the AusB
 Try and invite and confirm a speaker as early as possible, not only so they can adequately prepare but also so we can advertise effectively. Ask if they're happy for their presentation to be recorded and posted to the AusBIAS YouTube site. 
 
 ### Create the zoom meeting
-Zoom is by far the preferred meeting interface. If you don't have an institute license, shout out on the google group or contact Lachie to set up the link. Preferably invite AusBIAS members to the meeting via zoom so that it automatically creates a calendar invite (you will be sent the current membership list once you're confirmed as host). But also post on the AusBIAS google group. 
+Zoom is by far the preferred meeting interface. If you don't have an institute license, shout out on the google group or contact Lachie to set up the link. Preferably invite AusBIAS members to the meeting via zoom so that it automatically creates a calendar invite - you can just put ausbias@googlegroups.com in the invite field. But also post on the AusBIAS google group. 
 
 ### Advertise
 Again, as early as possible contact the LMA secretary amms.lma.secretary@gmail.com with speaker details and zoom link and ask to be added to the monthly LMA mailer - this goes to far more people than the AusBIAS list. 
