@@ -33,12 +33,12 @@ AusBIAS organises <a href="/monthly-meeting/">monthly meetings</a>, usually onli
 <hr class="section-divider">
 <h2>Past Events</h2>
 
-<div class="events-list past-events">
+<div class="events-list past-events" id="past-events-list">
   {% assign today = 'now' | date: '%Y-%m-%d' %}
   {% assign past_events = site.data.events | sort: 'date' | reverse %}
   {% assign past_events_filtered = past_events | where_exp: "event", "event.date < today" %}
-  {% for event in past_events_filtered limit:3 %}
-    <div class="event-item">
+  {% for event in past_events_filtered %}
+    <div class="event-item{% if forloop.index > 3 %} event-hidden{% endif %}">
         <div class="event-logo">
         {% if event.logo %}
             <img src="{{ event.logo | relative_url }}" alt="{{ event.title }} logo">          
@@ -53,3 +53,15 @@ AusBIAS organises <a href="/monthly-meeting/">monthly meetings</a>, usually onli
       </div>
 {% endfor %}
 </div>
+
+{% if past_events_filtered.size > 3 %}
+  <button id="show-more-events" class="btn-outline">Show more past events</button>
+  <script>
+    document.getElementById('show-more-events').addEventListener('click', function (e) {
+      document.querySelectorAll('#past-events-list .event-hidden').forEach(function (el) {
+        el.classList.remove('event-hidden');
+      });
+      e.target.remove();
+    });
+  </script>
+{% endif %}

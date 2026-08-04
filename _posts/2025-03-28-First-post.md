@@ -5,6 +5,7 @@ date:   2025-03-28
 categories: [news, updates]
 author: lachlan-whitehead
 bsky: "https://bsky.app/profile/drlachie.bsky.social"
+description: "The story behind the AusBIAS logo, from a GloBIAS homage to a python-generated map of Australia's bioimage analysis community."
 ---
 
 ### What's a society without a logo? 

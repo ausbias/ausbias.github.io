@@ -26,11 +26,7 @@ permalink: /monthly-meeting/
             {% endif %}</td>
       <td> {% for h in meeting.host %}
                 {% if h.url %}
-                  {% if h.url == "volunteer" %} 
-                    {% include volunteer-email.html %} 
-                  {% else %}
-                    <a href="{{ h.url }}">{{ h.name }}</a>
-                  {% endif %}
+                  <a href="{{ h.url }}">{{ h.name }}</a>
                 {% else %}
                   {{ h.name }}
                 {% endif %}

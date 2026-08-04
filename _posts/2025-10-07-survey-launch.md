@@ -5,6 +5,7 @@ date:   2025-10-07
 categories: [news, updates]
 author: lachlan-whitehead
 bsky: "https://bsky.app/profile/drlachie.bsky.social"
+description: "AusBIAS launches a national survey of microscopists and microscopy users to understand how the Australian community approaches image analysis."
 ---
 
 ### How Do You Approach Image Analysis? AusBIAS Wants to Hear From You

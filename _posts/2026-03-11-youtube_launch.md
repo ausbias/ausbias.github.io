@@ -5,6 +5,7 @@ date:   2026-03-11
 categories: [news, updates]
 author: lachlan-whitehead
 bsky: "https://bsky.app/profile/drlachie.bsky.social"
+description: "AusBIAS is now on YouTube, hosting recordings of monthly meetings starting with Cameron Nowell's February 2026 presentation."
 ---
 
 ### Ausbias now as a YouTube Channel 

@@ -5,6 +5,7 @@ date:   2025-04-17
 categories: [news, updates]
 author: pamela-young
 bsky: "https://bsky.app/profile/pammer61.bsky.social"
+description: "A recap of AusBIAS's first 2025 meeting, reviewing the paper 'The crucial role of bioimage analysts in scientific research and publication' by Cimini et al."
 ---
 
 ### Pam Young rambled a bit at the first AusBIAS meeting of 2025
