@@ -1,7 +1,7 @@
 ---
 layout: default
-title: 2025 Monthly Meetings
-permalink: /2025-meetings/
+title: 2026 Monthly Meetings
+permalink: /2026-meetings/
 ---
 
 <h1>Monthly Meetings</h1>
@@ -17,7 +17,7 @@ permalink: /2025-meetings/
     </tr>
   </thead>
   <tbody>
-      {% for meeting in site.data.2025_monthly_meetings %}
+      {% for meeting in site.data.2026_monthly_meetings %}
       <tr>
       <td>  {{ meeting.date | date: "%B %d, %Y" }}
             {% if meeting.time %}
